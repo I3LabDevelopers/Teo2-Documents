@@ -82,41 +82,13 @@ Interactions
 \end_layout
 
 \begin_layout Subsection
-User Meeting
+Idle state
 \end_layout
 
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand input
 filename "interactions/userMeeting.lyx"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
-User Smiling
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand input
-filename "interactions/userSmiling.lyx"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
-User Leaves
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand input
-filename "interactions/userLeaving.lyx"
 
 \end_inset
 

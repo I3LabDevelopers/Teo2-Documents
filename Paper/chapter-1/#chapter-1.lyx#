@@ -82,7 +82,7 @@ Interactions
 \end_layout
 
 \begin_layout Subsection
-User Meeting
+Idle state
 \end_layout
 
 \begin_layout Standard
@@ -96,11 +96,115 @@ filename "interactions/userMeeting.lyx"
 \end_layout
 
 \begin_layout Subsection
-User Smiling
+Talking Teo
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand input
+filename "interactions/userSmiling.lyx"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
-User Leaves
+User Leaving
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand input
+filename "interactions/userLeaving.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+User 
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand input
+filename "interactions/userLeaving.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+User Leaving
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand input
+filename "interactions/userLeaving.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+User Leaving
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand input
+filename "interactions/userLeaving.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+User Leaving
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand input
+filename "interactions/userLeaving.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+User Leaving
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand input
+filename "interactions/userLeaving.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+User Leaving
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand input
+filename "interactions/userLeaving.lyx"
+
+\end_inset
+
+
 \end_layout
 
 \end_body
