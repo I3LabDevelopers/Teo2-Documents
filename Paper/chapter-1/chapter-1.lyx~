@@ -82,13 +82,13 @@ Interactions
 \end_layout
 
 \begin_layout Subsection
-Idle state
+Talk2Teo
 \end_layout
 
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand input
-filename "interactions/userMeeting.lyx"
+filename "interactions/talk2Teo.lyx"
 
 \end_inset
 

@@ -82,7 +82,7 @@ The therapist selects
 \begin_inset Quotes fld
 \end_inset
 
-Idle state
+Talk2Teo
 \begin_inset Quotes frd
 \end_inset
 
@@ -102,8 +102,7 @@ Activities
 \end_layout
 
 \begin_layout Standard
-During the idle state, Teo can talk to the user through automatic and manual
- behaviours.
+Teo can talk to the user through automatic and manual behaviours.
 \begin_inset Newline newline
 \end_inset
 
@@ -117,7 +116,7 @@ Manual bahaviours have higher priority on the automatic ones.
 \begin_layout Standard
 \align center
 \begin_inset Float table
-placement h
+placement H
 wide false
 sideways false
 status open
@@ -125,7 +124,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Tabular
-<lyxtabular version="3" rows="9" columns="1">
+<lyxtabular version="3" rows="11" columns="1">
 <features booktabs="true" tabularvalignment="middle">
 <column alignment="left" valignment="top">
 <row>
@@ -143,6 +142,17 @@ Manual behaviours:
 </cell>
 </row>
 <row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
 <cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
@@ -151,7 +161,7 @@ Manual behaviours:
 placement h
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -192,6 +202,17 @@ status open
 \series bold
 \bar under
 Automatic behaviours:
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \end_inset
@@ -290,7 +311,7 @@ mhmm
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout

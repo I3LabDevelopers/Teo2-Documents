@@ -73,40 +73,91 @@
 
 \begin_body
 
-\begin_layout Section
-Games
+\begin_layout Subsubsection
+Input
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Standard
+The therapist selects 
+\begin_inset Quotes fld
+\end_inset
+
 Marco-Polo Game
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection
+Goal
 \end_layout
 
 \begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand input
-filename "games/marcoPolo.lyx"
+Talking to the user searching form him.
+\end_layout
+
+\begin_layout Subsubsection
+Activities
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename marco-polo.png
+	lyxscale 20
+	scale 20
 
 \end_inset
 
 
 \end_layout
 
-\begin_layout Section
-Interactions
-\end_layout
-
-\begin_layout Subsection
-Talk2Teo
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand input
-filename "interactions/talk2Teo.lyx"
-
 \end_inset
 
 
+\end_layout
+
+\begin_layout Subsubsection
+Superability Manual Mappings
+\end_layout
+
+\begin_layout Standard
+Area: Socialization
+\end_layout
+
+\begin_layout Itemize
+shows different emotional states based on the context 
+\end_layout
+
+\begin_layout Itemize
+greets verbally on demand 
+\end_layout
+
+\begin_layout Itemize
+responds verbally to greetings
+\end_layout
+
+\begin_layout Subsubsection
+HW required
+\end_layout
+
+\begin_layout Standard
+Led matrix, speaker, microphones, motion/distance sensors, remote pc.
+\end_layout
+
+\begin_layout Subsubsection
+SW required
+\end_layout
+
+\begin_layout Standard
+Face simulator, voice recognizer, voice simulator, remote control software.
 \end_layout
 
 \end_body
