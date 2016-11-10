@@ -1,0 +1,951 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass beamer
+\begin_preamble
+\usetheme{Madrid}
+\usefonttheme{serif}
+%\usecolortheme{crane} %GIALLA
+% more colors & themes http://www.hartwork.org/beamer-theme-matrix/
+
+\setbeamercovered{transparent}
+% transizioni: gli elementi nascosti (manualmente o con delle pause) vengono visualizzati in trasparenza
+
+%\beamerdefaultoverlayspecification{<+->}
+% transizioni: di default i paragrafi e gli elenchi (puntati e numerati) vengono scoperti passo per passo.
+% usate con cautela
+
+\usenavigationsymbolstemplate{}
+% hide navigation symbols (bottom-right corner in every slide)
+
+\titlegraphic{\includegraphics[height=1.6cm]{img/Teo2-logo.pdf} \\ \scriptsize{}\textit{Teacher:} \hfill  \scriptsize{}\textit{Tutor:}\\ {\scriptsize{}Franca GARZOTTO \hfill \scriptsize{}Francesco CLASADONTE }}
+% Aggiunge il logo del laboratorio in prima pagina
+% Ricordate che dovete sempre avere il logo in pdf nella cartella dove avete il documento (Teo2-logo.pdf)
+% sotto il logo aggiunge il nome del relatore e del correlatore
+
+\IfFileExists{lmodern.sty}{\usepackage{lmodern}}{}
+% sets nice fonts (if available)
+
+% inserisce AUTOMATICAMENTE una slide di titolo sezione all'inizio di OGNI sezione: in questa slide viene visualizzato l'indice delle sezioni, evidenziata quella corrente.
+\AtBeginSection[]
+{
+  \begin{frame}<beamer>
+    \frametitle{Section \thesection} % se volete in italiano, sostituite Section con Sezione
+    \tableofcontents[currentsection]
+  \end{frame}
+}
+
+% ridefinisce il footer per evitare di includere \institute tra () accanto al nome, potrebbe risultare troppo lungo
+% LyX 2.1 pare abbia risolto questo bug. Lascio questo codice commentato, rimane utile per ridefinire il pedice nel caso si desiderasse fare cose buffe in seguito
+% fonte: http://tex.stackexchange.com/questions/35166/how-can-i-remove-the-institute-from-the-author-footline-on-beamer
+%decommentato per eliminare il numero totale delle slide
+\setbeamertemplate{footline}
+{
+  \leavevmode%
+  \hbox{%
+  \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,center]{author in head/foot}%
+    \usebeamerfont{author in head/foot}\insertshortauthor%~~\beamer@ifempty{\insertshortinstitute}{}{(\insertshortinstitute)}
+  \end{beamercolorbox}%
+  \begin{beamercolorbox}[wd=.335\paperwidth,ht=2.25ex,dp=1ex,center]{title in head/foot}%
+   \usebeamerfont{title in head/foot}\insertshorttitle
+  \end{beamercolorbox}%
+  \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,right]{date in head/foot}%
+    \usebeamerfont{date in head/foot}\insertshortdate{}\hspace*{2em}
+    \insertframenumber{} \hspace*{2ex}  % \insertframenumber{} / \inserttotalframenumber\hspace*{2ex} 
+  \end{beamercolorbox}}%
+  \vskip0pt%
+}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks true
+\pdf_pdfborder true
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Teo 2: emotional Teo
+\begin_inset Newline newline
+\end_inset
+
+Advanced User Interfaces project
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+AUI project
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+il titolo breve è opzionale (solo se diverso dal titolo esteso) e viene
+ visualizzato a pedice.
+ Se desideri mantenere il titolo esteso anche a pedice, cancella il campo
+ titolo breve (e non solo il suo contenuto).
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subtitle
+
+\emph on
+Advanced User Interface tutoring discussion #1
+\end_layout
+
+\begin_layout Author
+
+\series bold
+Riccardo Campo
+\begin_inset Newline newline
+\end_inset
+
+Moreno Sardella
+\begin_inset Newline newline
+\end_inset
+
+Rafael Rodriguez Sanchez
+\series default
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Argument 1
+status collapsed
+
+\begin_layout Plain Layout
+Campo-Sardella-Rodriguez Sanchez 
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+optional, used for page footer
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Date
+10th November 2016
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+10/11/2016
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+optional, used for page footer
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+Logo and Supervisor name [& Assistant supervisor] are inserted in the \SpecialChar LaTeX
+ preamble.
+ Document > Settings > \SpecialChar LaTeX
+ preamble to edit
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+GENERAL ADVICES:
+\end_layout
+
+\begin_layout Plain Layout
+- this presentation should reflect the structure of your thesis (more or
+ less).
+ Start from the general and go ahead through what you did and why.
+\end_layout
+
+\begin_layout Plain Layout
+- nobody will print this presentation.
+ nobody will study on it.
+ There are things that should be said and things that sould be written here.
+ The last one is a superset of the last one.
+ Images will be fine to keep concept together.
+\end_layout
+
+\begin_layout Plain Layout
+- you can copy-paste here your thesis.
+ Then ask yourself 
+\begin_inset Quotes eld
+\end_inset
+
+is this slide important to explain what I've done?
+\begin_inset Quotes erd
+\end_inset
+
+ If not, delete it.
+\end_layout
+
+\begin_layout Plain Layout
+- ...and then 
+\begin_inset Quotes eld
+\end_inset
+
+Is it possible to explain the same thing with a chart of a schema?
+\begin_inset Quotes erd
+\end_inset
+
+ If yes, do it.
+\end_layout
+
+\begin_layout Plain Layout
+- if you need to talk on an image, do not hide it in corners of your slide.
+ use the whole slide for your image!
+\end_layout
+
+\begin_layout Plain Layout
+- it is a good thing to let listeners have an idea of the progress of your
+ discussion: tell them section by section, do not use slide progess.
+\end_layout
+
+\begin_layout Plain Layout
+– use slide numbers: professors will be able annotate the number of the
+ slide where they will ask you something
+\end_layout
+
+\begin_layout Plain Layout
+– do not show the total number of slides.
+ They will expect a constant rate of slides, but you will probably not have
+ a constant distribution of slide per section.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Target group and its needs
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout ExampleBlock
+
+\size larger
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+
+\size larger
+Primary users
+\end_layout
+
+\end_inset
+
+
+\size default
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+School children/NDD-affected children
+\end_layout
+
+\begin_layout Itemize
+Teachers/Therapists
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout ExampleBlock
+
+\size larger
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+
+\size larger
+Needs
+\end_layout
+
+\end_inset
+
+
+\size default
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Learn to recognize emotions from others
+\end_layout
+
+\begin_layout Itemize
+Interact socially with others
+\end_layout
+
+\begin_layout Itemize
+Convey emotional rewards to the children throughout learning activities
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Frame
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Goals of the system
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout ExampleBlock
+
+\size larger
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+
+\size larger
+Goals
+\end_layout
+
+\end_inset
+
+
+\size default
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Develop empathetic behaviors
+\end_layout
+
+\begin_layout Itemize
+Include socially correct spatial management
+\end_layout
+
+\begin_layout Itemize
+Produce emotional reactions that make Teo 2 more emotionally natural than
+ Teo1
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Frame
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Main requirements of the system
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout ExampleBlock
+
+\size larger
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+
+\size larger
+Functional requirements
+\end_layout
+
+\end_inset
+
+
+\size default
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+The user has to be able to talk with Teo
+\end_layout
+
+\begin_layout Itemize
+The system has to understand the user mood
+\end_layout
+
+\begin_layout Itemize
+The system has to be empathetic towards the users
+\end_layout
+
+\begin_layout Itemize
+The system has to provide user statistics
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout ExampleBlock
+
+\size larger
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+
+\size larger
+Non-functional requirements
+\end_layout
+
+\end_inset
+
+
+\size default
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Short response time
+\end_layout
+
+\begin_layout Itemize
+Unharming materials
+\end_layout
+
+\begin_layout Itemize
+Adequate battery autonomy
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Frame
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+It's time to
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+
+\size huge
+Scenarios
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Scenario 1: Marco-Polo game
+\end_layout
+
+\end_inset
+
+
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Only
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Graphics
+	filename img/marco-polo1.png
+	lyxscale 20
+	width 95col%
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Only
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Graphics
+	filename img/marco-polo2.png
+	lyxscale 20
+	width 95col%
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Only
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Graphics
+	filename img/marco-polo3.png
+	lyxscale 20
+	width 95col%
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Scenario 2: Talk2Teo
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename img/Talk2Teo.png
+	lyxscale 20
+	height 40theight%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename ../../Paper/chapter-1/interactions/diagram-xboxone-controller.png
+	lyxscale 45
+	height 45theight%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+http://www.xkcd.com/1403
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+The end
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+
+\size largest
+Thanks!
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace vfill
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename img/thesis_defense.png
+	lyxscale 20
+	height 50theight%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+http://www.xkcd.com/1403
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
