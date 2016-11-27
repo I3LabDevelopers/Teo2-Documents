@@ -73,73 +73,138 @@
 
 \begin_body
 
-\begin_layout Subsubsection
-Input
+\begin_layout Section
+Games
+\end_layout
+
+\begin_layout Section
+Interactions
+\end_layout
+
+\begin_layout Subsection
+Idle state
 \end_layout
 
 \begin_layout Standard
-The therapist selects 
-\begin_inset Quotes fld
+\begin_inset CommandInset include
+LatexCommand input
+filename "interactions/userMeeting.lyx"
+
 \end_inset
 
-Marco-Polo Game
-\begin_inset Quotes frd
+
+\end_layout
+
+\begin_layout Subsection
+Talking Teo
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand input
+filename "interactions/userSmiling.lyx"
+
 \end_inset
 
-.
+
 \end_layout
 
-\begin_layout Subsubsection
-Goal
-\end_layout
-
-\begin_layout Standard
-Talking to the user searching form him.
-\end_layout
-
-\begin_layout Subsubsection
-Activities
+\begin_layout Subsection
+User Leaving
 \end_layout
 
 \begin_layout Standard
-\align center
+\begin_inset CommandInset include
+LatexCommand input
+filename "interactions/userLeaving.lyx"
+
+\end_inset
+
 
 \end_layout
 
-\begin_layout Subsubsection
-Superability Manual Mappings
-\end_layout
-
-\begin_layout Standard
-Area: Socialization
-\end_layout
-
-\begin_layout Itemize
-shows different emotional states based on the context 
-\end_layout
-
-\begin_layout Itemize
-greets verbally on demand 
-\end_layout
-
-\begin_layout Itemize
-responds verbally to greetings
-\end_layout
-
-\begin_layout Subsubsection
-HW required
+\begin_layout Subsection
+User 
 \end_layout
 
 \begin_layout Standard
-Led matrix, speaker, microphones, motion/distance sensors, remote pc.
+\begin_inset CommandInset include
+LatexCommand input
+filename "interactions/userLeaving.lyx"
+
+\end_inset
+
+
 \end_layout
 
-\begin_layout Subsubsection
-SW required
+\begin_layout Subsection
+User Leaving
 \end_layout
 
 \begin_layout Standard
-Face simulator, voice recognizer, voice simulator, remote control software.
+\begin_inset CommandInset include
+LatexCommand input
+filename "interactions/userLeaving.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+User Leaving
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand input
+filename "interactions/userLeaving.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+User Leaving
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand input
+filename "interactions/userLeaving.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+User Leaving
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand input
+filename "interactions/userLeaving.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+User Leaving
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand input
+filename "interactions/userLeaving.lyx"
+
+\end_inset
+
+
 \end_layout
 
 \end_body

@@ -194,15 +194,7 @@ The document is structured in this way:
 \end_layout
 
 \begin_layout Itemize
-Chapter 1 
-\begin_inset Quotes fld
-\end_inset
-
-Scenario
-\begin_inset Quotes frd
-\end_inset
-
-: it describes some possible scenarios
+Chapter 1: it describes some possible scenarios
 \end_layout
 
 \end_body

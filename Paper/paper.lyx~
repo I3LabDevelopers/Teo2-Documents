@@ -21,6 +21,7 @@
 \usepackage[table]{xcolor}
 \usepackage{booktabs}
 \usepackage{algpseudocode}
+\usepackage{graphicx}
 
 % this is a dirty fix for LTS version of Ubuntu/Kubuntu that has a
 % very outdated "geometry" package
@@ -517,6 +518,27 @@ filename "chapter-1/chapter-1.lyx"
 \end_layout
 
 \begin_layout Chapter*
+Chapter 2
+\begin_inset CommandInset label
+LatexCommand label
+name "chap:first-chapter-2"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand input
+filename "chapter-2/chapter-2.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter*
 Conclusions
 \begin_inset CommandInset label
 LatexCommand label
@@ -610,46 +632,7 @@ filename "appendix-a/appendix-a.lyx"
 
 \end_layout
 
-\begin_layout Chapter
-Second appendix
-\begin_inset CommandInset label
-LatexCommand label
-name "app:second-appendix"
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand input
-filename "appendix-b/appendix-b.lyx"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Chapter
-Third appendix
-\begin_inset CommandInset label
-LatexCommand label
-name "app:third-appendix"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand input
-filename "appendix-c/appendix-c.lyx"
-
-\end_inset
-
-
 \begin_inset Newpage clearpage
 \end_inset
 
