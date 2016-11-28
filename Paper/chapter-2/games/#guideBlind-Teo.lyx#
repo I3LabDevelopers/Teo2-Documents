@@ -115,18 +115,17 @@ The game starts with a ’blindfolded’ Teo, which explains the child the dynam
 \begin_inset Newline newline
 \end_inset
 
-In a display it is shown to the kid a sequence of checkpoints that he has
- to help Teo to arrive while Teo’s blindfolded.
+A projector will show on the floor a sequence of images (checkpoints).
 \begin_inset Newline newline
 \end_inset
 
-The child must move to the check point and call ’Teo, here!’ so Teo could
+The child must move to the checkpoint and call ’Teo, here!’ so Teo could
  start moving in his direction.
 \begin_inset Float figure
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -170,21 +169,12 @@ name "fig:image-1-4-2-3-1"
 
 \end_inset
 
-Whenever Teo arrives to a correct checkpoint, congratulates the kid happily
- and prompts him to keep doing a great job.
-\begin_inset Newline newline
-\end_inset
 
-The game ends when Teo reaches the final checkpoint.
- 
-\end_layout
-
-\begin_layout Standard
 \begin_inset Float figure
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -206,7 +196,7 @@ status open
 status open
 
 \begin_layout Plain Layout
-Guide Blind-Teo - 1st step
+Guide Blind-Teo - 2nd step
 \end_layout
 
 \end_inset
@@ -218,7 +208,7 @@ name "fig:image-1-4-2-3-2"
 
 \end_inset
 
-1st step of Guide Blind-Teo game
+2nd step of Guide Blind-Teo game
 \end_layout
 
 \end_inset
@@ -228,7 +218,13 @@ name "fig:image-1-4-2-3-2"
 
 \end_inset
 
+Whenever Teo arrives to a correct checkpoint, congratulates the kid happily
+ and prompts him to keep doing a great job.
+\begin_inset Newline newline
+\end_inset
 
+The game ends when Teo reaches the final checkpoint.
+ 
 \end_layout
 
 \begin_layout Subsubsection
@@ -240,7 +236,7 @@ HW and SW requirements
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -327,7 +323,7 @@ Microphones
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+Sound Localization
 \end_layout
 
 \end_inset
@@ -356,7 +352,7 @@ Kinect/RFID tags
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+Spatial Localization/Checkpoint ID
 \end_layout
 
 \end_inset
@@ -385,7 +381,7 @@ Display
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+User interface to display information
 \end_layout
 
 \end_inset
@@ -414,7 +410,7 @@ Speakers
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+Voice Synthesizer
 \end_layout
 
 \end_inset
@@ -443,7 +439,7 @@ LED Matrix and strips
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+Emotional face generation
 \end_layout
 
 \end_inset
@@ -472,7 +468,7 @@ Distance/Motion sensors
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+Child's proximity and presence
 \end_layout
 
 \end_inset
@@ -492,7 +488,7 @@ Teo movement
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+Motors
 \end_layout
 
 \end_inset
@@ -501,7 +497,7 @@ Teo movement
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+Control
 \end_layout
 
 \end_inset
@@ -536,7 +532,7 @@ status open
 status open
 
 \begin_layout Plain Layout
-HW and SW Marco-Polo requirements
+HW and SW Guide Blind-Teo requirements
 \end_layout
 
 \end_inset
@@ -544,11 +540,11 @@ HW and SW Marco-Polo requirements
 
 \begin_inset CommandInset label
 LatexCommand label
-name "tab:formal-table-1-2-1"
+name "tab:formal-table-1-4-2-4"
 
 \end_inset
 
-HW and SW requirements of Marco-Polo game
+HW and SW requirements of Guide Blind-Teo game
 \end_layout
 
 \end_inset
@@ -559,6 +555,20 @@ HW and SW requirements of Marco-Polo game
 \end_inset
 
 
+\end_layout
+
+\begin_layout Subsubsection
+Feasibility
+\end_layout
+
+\begin_layout Itemize
+this is an extension of the Marco-Polo game, so its implementation depends
+ on the completion of the latter one
+\end_layout
+
+\begin_layout Itemize
+it is necessary to install a RFID reader on Teo in order to recognize the
+ checkpoints
 \end_layout
 
 \end_body

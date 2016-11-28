@@ -175,7 +175,7 @@ name "fig:image-1-4-2-3-1"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -197,7 +197,7 @@ status collapsed
 status open
 
 \begin_layout Plain Layout
-Guide Blind-Teo - 1st step
+Guide Blind-Teo - 2nd step
 \end_layout
 
 \end_inset
@@ -209,7 +209,7 @@ name "fig:image-1-4-2-3-2"
 
 \end_inset
 
-1st step of Guide Blind-Teo game
+2nd step of Guide Blind-Teo game
 \end_layout
 
 \end_inset

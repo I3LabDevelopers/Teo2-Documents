@@ -235,7 +235,7 @@ In order to make things easy to use, there are the following presets of
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -660,7 +660,7 @@ Manual joypad actions - More Emotion preset
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -1078,7 +1078,7 @@ Manual joypad actions - More Emotion preset
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -1836,7 +1836,7 @@ HW and SW requirements
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -2126,6 +2126,15 @@ HW and SW requirements of Talk2Teo
 \end_inset
 
 
+\end_layout
+
+\begin_layout Subsubsection
+Feasibility
+\end_layout
+
+\begin_layout Itemize
+the automatic actions are more complex with respect to the manual ones,
+ so they will be implemented in case there will be enough time
 \end_layout
 
 \end_body

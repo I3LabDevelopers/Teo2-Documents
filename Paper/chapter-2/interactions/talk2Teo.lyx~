@@ -239,32 +239,15 @@ status open
 
 \begin_layout Plain Layout
 \align center
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-noindent
-\backslash
-resizebox{
-\backslash
-textwidth}{!}{%
-\end_layout
-
-\end_inset
-
 
 \size small
-
 \begin_inset Tabular
 <lyxtabular version="3" rows="18" columns="2">
 <features booktabs="true" tabularvalignment="middle">
 <column alignment="center" valignment="top" width="0pt">
 <column alignment="center" valignment="top" width="0pt">
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -275,7 +258,7 @@ Default:
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" usebox="none">
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -639,17 +622,6 @@ Unassigned
 
 \size default
  
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Plain Layout
@@ -692,32 +664,15 @@ status open
 
 \begin_layout Plain Layout
 \align center
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-noindent
-\backslash
-resizebox{
-\backslash
-textwidth}{!}{%
-\end_layout
-
-\end_inset
-
 
 \size small
-
 \begin_inset Tabular
 <lyxtabular version="3" rows="18" columns="2">
 <features booktabs="true" tabularvalignment="middle">
 <column alignment="center" valignment="top" width="0pt">
 <column alignment="center" valignment="top" width="0pt">
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -728,7 +683,7 @@ Greetings:
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" usebox="none">
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1085,17 +1040,6 @@ Unassigned
 
 \size default
  
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Plain Layout
@@ -1138,32 +1082,15 @@ status open
 
 \begin_layout Plain Layout
 \align center
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-noindent
-\backslash
-resizebox{
-\backslash
-textwidth}{!}{%
-\end_layout
-
-\end_inset
-
 
 \size small
-
 \begin_inset Tabular
 <lyxtabular version="3" rows="18" columns="2">
 <features booktabs="true" tabularvalignment="middle">
 <column alignment="center" valignment="top" width="0pt">
 <column alignment="center" valignment="top" width="0pt">
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1174,7 +1101,7 @@ More Emotions:
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" usebox="none">
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1531,17 +1458,6 @@ Unassigned
 
 \size default
  
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Plain Layout

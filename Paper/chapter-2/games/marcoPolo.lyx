@@ -275,6 +275,14 @@ Else, Teo keeps asking the kid for help and continues looking.
 \begin_inset Newline newline
 \end_inset
 
+
+\end_layout
+
+\begin_layout Subsubsection
+Conclusion of the game
+\end_layout
+
+\begin_layout Standard
 The game ends when the child hugs Teo.
 \end_layout
 
@@ -577,6 +585,20 @@ HW and SW requirements of Marco-Polo game
 \end_inset
 
 
+\end_layout
+
+\begin_layout Subsubsection
+Feasibility
+\end_layout
+
+\begin_layout Itemize
+the accuracy of the microphones must be sufficient in order to locate the
+ voice (0-90°, 91°-179°, 180°-269°, 270°-359° wrt to Teo)
+\end_layout
+
+\begin_layout Itemize
+constraining the child to stay in a fixed spot until Teo finds him woud
+ allow to complete the game, even though is not mandatory for the implementation
 \end_layout
 
 \end_body
