@@ -74,31 +74,13 @@
 \begin_body
 
 \begin_layout Section
-Games
-\end_layout
-
-\begin_layout Subsection
-Marco-Polo Game
+Teo behaviours
 \end_layout
 
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand input
-filename "games/marcoPolo.lyx"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
-Guide Blind-Teo Game
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand input
-filename "games/guideBlind-Teo.lyx"
+filename "teoBehaviours.lyx"
 
 \end_inset
 
@@ -106,17 +88,13 @@ filename "games/guideBlind-Teo.lyx"
 \end_layout
 
 \begin_layout Section
-Interactions
-\end_layout
-
-\begin_layout Subsection
-Talk2Teo
+Spatial relatioship Model
 \end_layout
 
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand input
-filename "interactions/talk2Teo.lyx"
+filename "spatialRelationshipModel.lyx"
 
 \end_inset
 

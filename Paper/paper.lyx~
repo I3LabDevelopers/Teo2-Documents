@@ -497,7 +497,7 @@ filename "introduction.lyx"
 \end_layout
 
 \begin_layout Chapter
-First chapter
+Chapter 1
 \begin_inset CommandInset label
 LatexCommand label
 name "chap:first-chapter"
@@ -517,7 +517,7 @@ filename "chapter-1/chapter-1.lyx"
 
 \end_layout
 
-\begin_layout Chapter*
+\begin_layout Chapter
 Chapter 2
 \begin_inset CommandInset label
 LatexCommand label
@@ -532,6 +532,48 @@ name "chap:first-chapter-2"
 \begin_inset CommandInset include
 LatexCommand input
 filename "chapter-2/chapter-2.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Chapter 3
+\begin_inset CommandInset label
+LatexCommand label
+name "chap:first-chapter-3"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand input
+filename "chapter-3/chapter-3.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Chapter 4
+\begin_inset CommandInset label
+LatexCommand label
+name "chap:first-chapter-4"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand input
+filename "chapter-4/chapter-4.lyx"
 
 \end_inset
 

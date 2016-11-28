@@ -194,7 +194,20 @@ The document is structured in this way:
 \end_layout
 
 \begin_layout Itemize
-Chapter 1: it describes some possible scenarios
+Chapter 1: it describes the users, their needs, the goals of the system
+ and the requirements analysis
+\end_layout
+
+\begin_layout Itemize
+Chapter 2: it describes what Teo can do and how he models the environment
+\end_layout
+
+\begin_layout Itemize
+Chapter 3: it describes some possible scenarios
+\end_layout
+
+\begin_layout Itemize
+Chapter 4: it describes a todo list for the development team
 \end_layout
 
 \end_body
