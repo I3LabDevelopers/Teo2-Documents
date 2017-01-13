@@ -1,0 +1,301 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass book
+\use_default_options true
+\master chapter-2.lyx
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+The use of robots has been proved successful in many cases of subjects with
+ different neurodevelopmental disorders, e.g., intellectual disability, attention-
+decit, hyperactivity disorder (ADHD), or Autistic Spectrum Disorder (ASD)
+\begin_inset CommandInset citation
+LatexCommand cite
+key "WhyRobots"
+
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "SocialRobots"
+
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+The use of social robots to provide alternative, “virtual” forms of Pet
+ Therapy has been explored in research since late nineties.
+\begin_inset Newline newline
+\end_inset
+
+Pet Therapy (PT) is a treatment that works well especially with NDD children,
+ leading to improvements in various spheres.
+\begin_inset Newline newline
+\end_inset
+
+According to current research
+\begin_inset CommandInset citation
+LatexCommand cite
+key "PetTherapy"
+
+\end_inset
+
+, PT helps NDD subjects to release their often persistent state of anxiety
+ and improves relaxation, as human-animal bond acts on “stress hormones”
+ production, inducing a reduction of arterial pressure, cardiac and respiratory
+ rates.
+\begin_inset Newline newline
+\end_inset
+
+Some studies have found that 5- and 6-year-olds who were more attached to
+ their pets expressed more empathy toward peers and that 7- to 10- year-olds
+ who had more “intimate talks” with their pets also had more empathy toward
+ their peers.
+\begin_inset Newline newline
+\end_inset
+
+The pioneer in this field is PARO, a stuffed robot shaped like a baby harp
+ seal and equipped with five kinds of sensors - tactile, light, audition,
+ temperature, and posture sensors - with which it can perceive people and
+ its environment.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Paro"
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\shape italic
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\shape italic
+\begin_inset Graphics
+	filename ../img/paro.jpg
+	lyxscale 70
+	width 70col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\shape italic
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Paro
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:image-2-2-1-1-2-2"
+
+\end_inset
+
+Seal Paro
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Similarly, SAM is a stuffed dolphin that engages NDD children in a variety
+ of play tasks.
+ Sam’s affordances and behavior has been designed for this specific target
+ group in cooperation with a team of therapists from SAM Foundation and
+ L’Abilità, two non-profit institution in Netherlands and Italy respectively.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Sam"
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\shape italic
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\shape italic
+\begin_inset Graphics
+	filename ../img/sam.png
+	lyxscale 70
+	width 70col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\shape italic
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Sam
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:image-2-2-1-1-2-2-1"
+
+\end_inset
+
+Dolphin Sam
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Another approach is based in using humanoid robots that put themselves in
+ the shoes of children companions.
+\begin_inset Newline newline
+\end_inset
+
+One of the most famous is ASK NAO, a 58cm height robot which is adapted
+ to the context of special children education, covering a broad range of
+ varied skills: interpersonal communication, knowledge of everyday activities,
+ vocabulary lessons, the recognition of emotions, etc.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "NAO"
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Still, given the wide range of NDD conditions and the specfic characteristics
+ of each single subject, there is space for new exploratory experiences
+ involving robotic interaction to enlarge the set of success stories and
+ identify new forms of therapeutic and educational interventions for this
+ target group.
+\end_layout
+
+\end_body
+\end_document

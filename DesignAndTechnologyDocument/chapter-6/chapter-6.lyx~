@@ -1,0 +1,151 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass book
+\options openright
+\use_default_options false
+\master ../DesignAndTechnologyDocument.lyx
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding T1
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 11
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry false
+\use_package amsmath 2
+\use_package amssymb 2
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 0
+\use_package mathtools 1
+\use_package mhchem 0
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\index Indice
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language french
+\papercolumns 1
+\papersides 2
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section
+What was left
+\end_layout
+
+\begin_layout Standard
+For the lack of time, unfortunaately we hadn't implemented a logger of data
+ (about distance and touch) collected by the Teo sensors.
+\begin_inset Newline newline
+\end_inset
+
+A big issue has occured during the development of the sound localization
+ code.
+ Arduino can sample at 50kHz, that means 50kB/s, that force us to sample
+ for 100ms because of the saturation of the memory.
+ Moreover, sampling from 3 microphones simultaneously means to divide the
+ frequency (50kHz/3=16kHz), which could produce aliasing for the Nyquist
+ theorem (if the nput signal has a frequency of more than 8kHz).
+\begin_inset Newline newline
+\end_inset
+
+Furthemore, sampling only 100ms don't let to understand which of the 3 signal
+ come first (Interaural Time Difference algorithm).
+\begin_inset Newline newline
+\end_inset
+
+This was the main reason for which we could not complete 
+\shape italic
+MarcoPolo
+\shape default
+ game.
+\end_layout
+
+\begin_layout Section
+Future directions
+\end_layout
+
+\begin_layout Standard
+Our solution is still far from its potential.
+\begin_inset Newline newline
+\end_inset
+
+Arduino could be replaced with a Raspberry Pi 3 or an Intel Edison, which
+ would allow Teo to easely compute digital signal processing, in order to
+ deal with 
+\series bold
+voice recognition
+\series default
+ and 
+\series bold
+face detection
+\series default
+.
+\begin_inset Newline newline
+\end_inset
+
+Finally, Teo could have enough resources in order to have an artificial
+ intelligence, which would allow Teo to be a companion in the children life,
+ not 
+\begin_inset Quotes fld
+\end_inset
+
+only
+\begin_inset Quotes frd
+\end_inset
+
+ a tool used by a therapist.
+\begin_inset Newline newline
+\end_inset
+
+The synthesized voice could be replaced with a real one in order to get
+ better engagement of the children (even if a synthesized voice allow to
+ modify the sentences more easly).
+\end_layout
+
+\end_body
+\end_document
