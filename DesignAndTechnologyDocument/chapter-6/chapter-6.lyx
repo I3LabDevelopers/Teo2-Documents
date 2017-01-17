@@ -89,7 +89,7 @@ A big issue has occured during the development of the sound localization
  for 100ms because of the saturation of the memory.
  Moreover, sampling from 3 microphones simultaneously means to divide the
  frequency (50kHz/3=16kHz), which could produce aliasing for the Nyquist
- theorem (if the nput signal has a frequency of more than 8kHz).
+ theorem (if the input signal has a frequency of more than 8kHz).
 \begin_inset Newline newline
 \end_inset
 
@@ -118,9 +118,11 @@ Our solution is still far from its potential.
 \begin_inset Newline newline
 \end_inset
 
-Arduino could be replaced with a Raspberry Pi 3 or an Intel Edison, which
- would allow Teo to easely compute digital signal processing, in order to
- deal with 
+Arduino could be replaced with a more powerful in order to:
+\end_layout
+
+\begin_layout Itemize
+easely compute digital signal processing, in order to deal with 
 \series bold
 voice recognition
 \series default
@@ -129,12 +131,11 @@ voice recognition
 face detection
 \series default
 .
-\begin_inset Newline newline
-\end_inset
+\end_layout
 
-Finally, Teo could have enough resources in order to have an artificial
- intelligence, which would allow Teo to be a companion in the children life,
- not 
+\begin_layout Itemize
+have enough resources to have an artificial intelligence, which would allow
+ Teo to be a companion in the children life, not 
 \begin_inset Quotes fld
 \end_inset
 
@@ -143,12 +144,24 @@ only
 \end_inset
 
  a tool used by a therapist.
-\begin_inset Newline newline
-\end_inset
+\end_layout
 
+\begin_layout Itemize
+centralize the network around Teo, leaving the computer application only
+ to set controller commands or other features before the session starts.
+\end_layout
+
+\begin_layout Standard
 The synthesized voice could be replaced with a real one in order to get
  better engagement of the children (even if a synthesized voice allow to
  modify the sentences more easly).
+\begin_inset Newline newline
+\end_inset
+
+Teo2 model leaves space to many possibilities in terms of usage and advantages
+ within the therapy.
+ Several new games and interaction can be designed using Teo2, thanks to
+ its versatility.
 \end_layout
 
 \end_body
