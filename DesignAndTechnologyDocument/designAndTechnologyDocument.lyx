@@ -635,5 +635,43 @@ options "plain"
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{chapter}{Bibliography}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+\start_of_appendix
+Appendix: User manuals
+\begin_inset CommandInset label
+LatexCommand label
+name "app:first-appendix"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand input
+filename "appendix-a/appendix-a.lyx"
+
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document
