@@ -71,6 +71,11 @@
 
 \begin_body
 
+\begin_layout Standard
+Based on the needs of the users and the goals of the system, as described
+ in Chapter 1, the following interaction scenarios are proposed for Teo2.
+\end_layout
+
 \begin_layout Subsubsection
 Talk2Teo
 \end_layout
@@ -87,6 +92,10 @@ filename "talk2Teo.lyx"
 
 \begin_layout Subsubsection
 MarcoPolo
+\end_layout
+
+\begin_layout Standard
+Marcopolo is a simple game that consist of the following.
 \end_layout
 
 \begin_layout Paragraph

@@ -330,7 +330,7 @@ restoregeometry
 \end_layout
 
 \begin_layout Chapter*
-The team
+The Team
 \end_layout
 
 \begin_layout Standard
@@ -495,7 +495,7 @@ filename "introduction.lyx"
 \end_layout
 
 \begin_layout Chapter
-Chapter 1: target groups and needs 
+Chapter 1: Target groups and needs 
 \begin_inset CommandInset label
 LatexCommand label
 name "chap:first-chapter"
@@ -516,7 +516,7 @@ filename "chapter-1/chapter-1.lyx"
 \end_layout
 
 \begin_layout Chapter
-Chapter 2: state of the art
+Chapter 2: State of the art
 \begin_inset CommandInset label
 LatexCommand label
 name "chap:first-chapter-2"
@@ -537,7 +537,7 @@ filename "chapter-2/chapter-2.lyx"
 \end_layout
 
 \begin_layout Chapter
-Chapter 3: solution
+Chapter 3: Solution
 \begin_inset CommandInset label
 LatexCommand label
 name "chap:first-chapter-3"
@@ -558,7 +558,7 @@ filename "chapter-3/chapter-3.lyx"
 \end_layout
 
 \begin_layout Chapter
-Chapter 4: empirical evaluation
+Chapter 4: Empirical evaluation plans
 \begin_inset CommandInset label
 LatexCommand label
 name "chap:first-chapter-4"
@@ -579,7 +579,7 @@ filename "chapter-4/chapter-4.lyx"
 \end_layout
 
 \begin_layout Chapter
-Chapter 5: value proposition
+Chapter 5: Value proposition
 \begin_inset CommandInset label
 LatexCommand label
 name "chap:first-chapter-5"
@@ -600,7 +600,7 @@ filename "chapter-5/chapter-5.lyx"
 \end_layout
 
 \begin_layout Chapter
-Chapter 6: future work
+Chapter 6: Future work
 \begin_inset CommandInset label
 LatexCommand label
 name "chap:first-chapter-6"

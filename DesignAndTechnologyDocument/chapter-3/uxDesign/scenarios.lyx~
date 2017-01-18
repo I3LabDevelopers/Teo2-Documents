@@ -71,7 +71,12 @@
 
 \begin_body
 
-\begin_layout Section
+\begin_layout Standard
+Based on the needs of the users and the goals of the system, as described
+ in Chapter 1, the following interaction scenarios are proposed for Teo2.
+\end_layout
+
+\begin_layout Subsubsection
 Talk2Teo
 \end_layout
 
@@ -85,11 +90,11 @@ filename "talk2Teo.lyx"
 
 \end_layout
 
-\begin_layout Section
+\begin_layout Subsubsection
 MarcoPolo
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Paragraph
 Version 1
 \end_layout
 
@@ -103,7 +108,7 @@ filename "marcoPolo1.lyx"
 
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Paragraph
 Version 2
 \end_layout
 

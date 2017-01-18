@@ -73,34 +73,77 @@
 
 \begin_body
 
+\begin_layout Standard
+For this scenario, the context of use is set in the therapy sessions were
+ the therapist guide the child through a set of activities specifically
+ designed to help him practice some skills.
+ As part of the development of these activities, Teo2 is to be involved
+ as a companion for the child during the process and, as a tool for the
+ therapist, who should be able to control Teo and use it to provide positive
+ reinforcement through mood changes, vocal praisals and movements that can
+ be related to a Teo's emotion.
+ Moreover, Teo is able to react to the external stimuli so to unfold behaviors
+ that the children can learn to relate to some cause and that should also
+ provide the feeling that Teo is 
+\begin_inset Quotes fld
+\end_inset
+
+alive
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Next, the functionalities, tools and workflow designed to realize the scenario
+ are described.
+ Moreover, it is also explained how these are supposed to be used by the
+ principal users (therapists and children).
+ 
+\end_layout
+
 \begin_layout Paragraph
 Input
 \end_layout
 
 \begin_layout Standard
-The therapist selects 
+In order for the therapist to have control over the functionalities and
+ behaviors of Teo
 \shape italic
+, 
+\shape default
+a control computer application is designed:
+\shape italic
+ 
+\begin_inset Quotes fld
+\end_inset
+
 Teo2Control
-\shape default
- app and chooses 
-\shape italic
-Talk2Teo
-\shape default
-.
-\begin_inset Newline newline
+\begin_inset Quotes frd
 \end_inset
 
 
+\shape default
+.
+ It serves the purpose to provide custumization and control of the robot
+ through a joypad.
+ Also, it is intended to provide the selection and activation of the set
+ of behaviors and functionalities through the option 
+\begin_inset Quotes fld
+\end_inset
+
+Talk2Teo
+\begin_inset Quotes frd
+\end_inset
+
+.
+ 
 \end_layout
 
 \begin_layout Standard
-
-\shape italic
-[optional]
-\begin_inset Newline newline
-\end_inset
-
-The therapist can configure a joypad (which controls Teo) with the 
+Moreover, the therapist can configure the joypad with a second computer
+ application 
 \begin_inset Quotes fld
 \end_inset
 
@@ -108,12 +151,15 @@ Teo2 Settings
 \begin_inset Quotes frd
 \end_inset
 
- app.
-\begin_inset Newline newline
-\end_inset
+ with which is possible to assign the desired functionalities to each button
+ through a user-friendly interface as shown in the Figure 3.4 and Figure
+ 3.5.
+ In order to make things easier to use, in addition to the whole manual
+ configuration of Figure 3.5, the following presets of such configurations
+ are available for the therapist to select.
 
-In order to make things easy to use, there are the following presets of
- such configurations, so the therapist can choose what she prefers.
+\shape italic
+ 
 \begin_inset Newline newline
 \end_inset
 
@@ -1381,9 +1427,11 @@ Manual joypad actions - More Emotion preset
 \end_inset
 
 
-\shape italic
-If the therapist skips this configuration phase, then the default preset
- will be associated to the joypad.
+\end_layout
+
+\begin_layout Standard
+If the therapist decides to skip this configuration phase, then the default
+ preset will be associated to the joypad.
 \end_layout
 
 \begin_layout Standard
@@ -1503,21 +1551,14 @@ Joypad customization
 \end_layout
 
 \begin_layout Paragraph
-Goal
-\end_layout
-
-\begin_layout Standard
-Talking to the user showing empathetic behaviours.
-\end_layout
-
-\begin_layout Paragraph
 Activities
 \end_layout
 
 \begin_layout Standard
-The therapist controls Teo using a joypad, allowing a 
+The therapist controls Teo using the joypad configured before, allowing
+ a
 \shape italic
-free2play
+ free to play
 \shape default
  approach.
 \begin_inset Newline newline
@@ -1531,7 +1572,10 @@ manual
 \bar under
 automatic
 \bar default
- ones.
+.
+ The first ones are those controllable through the joypad used by the therapist
+ and the second ones are the autonomous responses of Teo that are result
+ of different kind of interaction and external stimuli.
 \end_layout
 
 \begin_layout Subparagraph
@@ -1570,19 +1614,19 @@ low profile: nod, gasp, sigh
 \bar under
 Observation#1
 \bar default
-: everytime the a mood is selected, an animation follows.
+: everytime a mood is selected, an animation follows.
 \end_layout
 
 \begin_layout Itemize
 
 \shape italic
-Happy: Teo vibrates for 1 sec (or rotate 360?)
+Happy: Teo rotates 30° clockwise, 60° counter-clockwise and 30° clockwise
 \end_layout
 
 \begin_layout Itemize
 
 \shape italic
-Sad: none (or Teo vibrates for 1 sec?)
+Sad: Teo rotates 180° clockwise
 \end_layout
 
 \begin_layout Itemize
@@ -1594,7 +1638,7 @@ Scared: Teo goes back 40cm and vibrates for 3 sec
 \begin_layout Itemize
 
 \shape italic
-Angry: Teo moves forward 20cm, vibrates for 0,5 sec and goes back 20cm 
+Angry: Teo moves forward 20cm, vibrates for 0,5 sec and goes back 20cm
 \end_layout
 
 \begin_layout Standard
@@ -1712,14 +1756,5 @@ Every 5 sec of inactivy, Teo makes a low profile non-linguistic utterance
 \end_layout
 
 \end_deeper
-\begin_layout Paragraph
-Feasibility 
-\end_layout
-
-\begin_layout Standard
-The automatic behaviours are more complex with respect to the manual ones,
- so they will be implemented in case there will be enough time
-\end_layout
-
 \end_body
 \end_document

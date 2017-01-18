@@ -74,9 +74,9 @@
 \begin_body
 
 \begin_layout Standard
-Robotic companions have been proved effective to promote social skills.
- It is though that this capability is enhanced when the robot exhibits come
- 
+Robotic companions have been proven effective to promote social skills and
+ it is thought that this capability is enhanced when the robot exhibits
+ some 
 \begin_inset Quotes fld
 \end_inset
 
@@ -84,73 +84,83 @@ emotional
 \begin_inset Quotes frd
 \end_inset
 
- behavior.
-\begin_inset Newline newline
-\end_inset
+ behavior that can produce better relationships with people.
+ Moreover, it is interesting to explore the effect of these emotionally
+ enhanced robotic companions with children that are subject of Neurodevelopmenta
+l Disorders (NDD) and the value the robots can bring within the therapy
+ sessions that are conducted with these children.
+\end_layout
 
-The goal is to re-engineer and extend the existing version of Teo 2
+\begin_layout Standard
+The goal of this project is to re-engineer and extend the existing version
+ of Teo 2
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Teo2"
 
 \end_inset
 
- with a cognitive module (enabling emotional sensing, expression features,
- adaptive human-robot spatial behavior and adaptive polite/intimate behavior).
-\begin_inset Newline newline
-\end_inset
+ with a set of behaviors and functionalities that can make it useful for
+ the therapist to include the robot as part of their therapy and as a companion
+ toy that the children can feel comfortable with.
+\end_layout
 
-The document is structured in this way:
+\begin_layout Standard
+This document is intended to present the principal aspects in the design
+ and development of some interaction scenarios for Teo 2 and the future
+ plans for evaluation and enhancement.
+ Finally, this document is structured as follows.
 \end_layout
 
 \begin_layout Itemize
-Chapter 1: target groups and needs
+Chapter 1: Target groups and needs
 \begin_inset Newline newline
 \end_inset
 
-the users, their needs, the goals of the system and the requirements analysis
+The users, their needs, the goals of the system and the requirements analysis.
 \end_layout
 
 \begin_layout Itemize
-Chapter 2: state of the art
+Chapter 2: State of the art
 \begin_inset Newline newline
 \end_inset
 
-what are the neurodevelopmental disorders and how can they be dealed through
- robotics
+What are the neurodevelopmental disorders and how can they be dealed with
+ through robotics
 \end_layout
 
 \begin_layout Itemize
-Chapter 3: solution
+Chapter 3: Solution
 \begin_inset Newline newline
 \end_inset
 
-the user experience design and the software and hardware architecture of
+The user experience design and the software and hardware architecture of
  Teo2
 \end_layout
 
 \begin_layout Itemize
-Chapter 4: empirical evaluation
+Chapter 4: Empirical evaluation
 \begin_inset Newline newline
 \end_inset
 
-the evaluation plan of Teo2
+The evaluation plans for the presented interaction scenarios
 \end_layout
 
 \begin_layout Itemize
-Chapter 5: value proposition
+Chapter 5: Value proposition
 \begin_inset Newline newline
 \end_inset
 
-a critical reflection about our work
+A critical reflection about the work done and what is the difference between
+ Teo2 and other robots.
 \end_layout
 
 \begin_layout Itemize
-Chapter 6: future work
+Chapter 6: Future work
 \begin_inset Newline newline
 \end_inset
 
-what was left and future directions
+Future directions
 \end_layout
 
 \end_body

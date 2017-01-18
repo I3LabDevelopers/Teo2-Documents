@@ -73,9 +73,9 @@
 \begin_body
 
 \begin_layout Standard
-The use of robots has been proved successful in many cases of subjects with
+The use of robots has been proven successful in many cases of subjects with
  different neurodevelopmental disorders, e.g., intellectual disability, attention-
-decit, hyperactivity disorder (ADHD), or Autistic Spectrum Disorder (ASD)
+deficit, hyperactivity disorder (ADHD), Autistic Spectrum Disorder (ASD)
 \begin_inset CommandInset citation
 LatexCommand cite
 key "WhyRobots"
@@ -98,7 +98,7 @@ The use of social robots to provide alternative, “virtual” forms of Pet
 \begin_inset Newline newline
 \end_inset
 
-Pet Therapy (PT) is a treatment that works well especially with NDD children,
+Pet Therapy (PT) is a treatment that works well, especially with NDD children,
  leading to improvements in various spheres.
 \begin_inset Newline newline
 \end_inset
@@ -110,23 +110,23 @@ key "PetTherapy"
 
 \end_inset
 
-, PT helps NDD subjects to release their often persistent state of anxiety
+, PT helps NDD subjects to release their, often persistent, state of anxiety
  and improves relaxation, as human-animal bond acts on “stress hormones”
- production, inducing a reduction of arterial pressure, cardiac and respiratory
- rates.
+ production, inducing a reduction of arterial pressure and cardiac and respirato
+ry rates.
 \begin_inset Newline newline
 \end_inset
 
 Some studies have found that 5- and 6-year-olds who were more attached to
- their pets expressed more empathy toward peers and that 7- to 10- year-olds
+ their pets expressed more empathy toward peers and that 7- to 10-year-olds
  who had more “intimate talks” with their pets also had more empathy toward
  their peers.
 \begin_inset Newline newline
 \end_inset
 
 The pioneer in this field is PARO, a stuffed robot shaped like a baby harp
- seal and equipped with five kinds of sensors - tactile, light, audition,
- temperature, and posture sensors - with which it can perceive people and
+ seal and equipped with five kinds of sensors –tactile, light, audition,
+ temperature, and posture sensors– with which it can perceive people and
  its environment.
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -201,7 +201,7 @@ Similarly, SAM is a stuffed dolphin that engages NDD children in a variety
  of play tasks.
  Sam’s affordances and behavior has been designed for this specific target
  group in cooperation with a team of therapists from SAM Foundation and
- L’Abilità, two non-profit institution in Netherlands and Italy respectively.
+ L’Abilità, non-profit institutions, in Netherlands and Italy respectively.
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Sam"
@@ -276,9 +276,9 @@ Another approach is based in using humanoid robots that put themselves in
 \begin_inset Newline newline
 \end_inset
 
-One of the most famous is ASK NAO, a 58cm height robot which is adapted
- to the context of special children education, covering a broad range of
- varied skills: interpersonal communication, knowledge of everyday activities,
+One of the most famous is ASK NAO, a 58cm-tall robot which is adapted to
+ the context of special children education, covering a broad range of varied
+ skills: interpersonal communication, knowledge of everyday activities,
  vocabulary lessons, the recognition of emotions, etc.
 \begin_inset CommandInset citation
 LatexCommand cite

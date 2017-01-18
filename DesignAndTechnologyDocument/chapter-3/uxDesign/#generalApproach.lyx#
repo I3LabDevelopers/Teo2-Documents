@@ -76,10 +76,10 @@
 \begin_body
 
 \begin_layout Standard
-In many existing researches, the experiences with the robot are shaped as
- games, especially for children, and the robot is static and cannot be personali
-zed by the users, limiting the range of opportunities that robotic interaction
- can potentially offer to NND subjects.
+In many studies, the experiences with the robot are shaped as games, especially
+ for children, and the robot is static and cannot be personalized by the
+ users, limiting the range of opportunities that robotic interaction can
+ potentially offer to NDD subjects.
 \begin_inset Newline newline
 \end_inset
 
@@ -90,9 +90,9 @@ key "Teo1"
 
 \end_inset
 
- has begun to overcome these limitations, exploring the potentials of the
- integration of mobile robots and virtual worlds in order to support, through
- the game, various educational-therapeutic activities.
+ has begun to overcome these limitations; it explores the potentials of
+ the integration of mobile robots and virtual worlds in order to support,
+ through gaming situations, various educational-therapeutic activities.
 \begin_inset Newline newline
 \end_inset
 
@@ -105,7 +105,7 @@ The robot used in the KROG project is called Teo.
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -149,11 +149,15 @@ KROG project - Teo 1
 
 \end_inset
 
-It has been designed to be used as a play tool for children of different
- ages and with different NDDs, enables a wide range of game-based experiences,
- and supports a number of play dimensions that are largely unexplored with
- this target group, such as movements in space, physical manipulation, and
- robot personalization.
+
+\end_layout
+
+\begin_layout Standard
+Teo has been designed to be used as a play tool for children of different
+ ages and with different types of NDDs.
+ It enables a wide range of game-based experiences and supports a number
+ of play dimensions that are largely unexplored with this target group,
+ such as movements in space, physical manipulation, and robot personalization.
 \begin_inset Newline newline
 \end_inset
 
@@ -161,17 +165,17 @@ Teo is emotional, huggable, mobile, and customizable.
 \begin_inset Newline newline
 \end_inset
 
-Teo is also holonomic, free of moving on the floor in any direction at a
- speed similar to that of humans in indoor environments.
+Teo is also holonomic, that is, free of moving on the floor in any direction
+ at a speed similar to that of humans in indoor environments.
 \begin_inset Newline newline
 \end_inset
 
 Its "natural" mobility has the potential of making the robot more easily
  accepted by NDD subjects and enables them to explore spatial relationships
  during robotic interaction.
-\begin_inset Newline newline
-\end_inset
+\end_layout
 
+\begin_layout Standard
 Teo can exploit several interaction modalities in ways that are completely
  customizable to the needs and preferences of each specific subject.
 \begin_inset Newline newline
@@ -179,13 +183,13 @@ Teo can exploit several interaction modalities in ways that are completely
 
 Its soft body includes a set of sensors that detect various forms of body
  manipulation, such as hugs, caresses, slaps, and punches, that trigger
- Teo's emotional reactions, expressed by means of sound, light effects,
- or body movements.
+ Teo's emotional reactions, expressed by means of sound, light effects and
+ body movements.
 \begin_inset Newline newline
 \end_inset
 
-Coloured LEDs and sound speakers are embedded in the body, supporting communicat
-ion.
+Coloured LEDs and sound speakers are embedded in the body to support visual
+ and spoken communication.
 \begin_inset Newline newline
 \end_inset
 
@@ -201,25 +205,22 @@ The set of stimuli offered by Teo contribute to create fun, to build an
 \end_inset
 
 Stimuli can be either controlled by the therapist or triggered automatically
- by effect of interactions, which enlarges the gamut of activities that
- can be played with the robot (it also relieves the caregiver from an attentiona
-lly intensive control of the child).
-\begin_inset Newline newline
-\end_inset
+ by effect of interactions, that enlarges the gamut of activities that can
+ be played with the robot (it also relieves the caregiver from an attentionally
+ intensive control of the child).
+\end_layout
 
-
-\begin_inset Newline newline
-\end_inset
-
-Our project aims to design new interactive experience using the existing
- version of Teo 2
+\begin_layout Standard
+The present project aims to design new interactive experiences using the
+ existing version of Teo 2
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Teo2"
 
 \end_inset
 
-.
+, that was intended as a re-engineered version of the Teo described above,
+ in .
 \begin_inset Newline newline
 \end_inset
 
@@ -258,7 +259,7 @@ status collapsed
 \begin_inset Graphics
 	filename ../../img/Teo2Tolomeo.png
 	lyxscale 10
-	width 20col%
+	width 30col%
 
 \end_inset
 
@@ -315,7 +316,7 @@ status collapsed
 \begin_inset Graphics
 	filename ../../img/Teo2-front.png
 	lyxscale 10
-	width 30col%
+	width 45col%
 
 \end_inset
 
@@ -407,11 +408,11 @@ Differnces between the basic Teo 2 and the emotional one
 \end_layout
 
 \begin_layout Standard
-The main features are the followings:
+The main features of Teo2 are the following:
 \end_layout
 
 \begin_layout Itemize
-dynamic face and body expressions (led matrix and led strips) 
+Dynamic face and body expressions (led matrix and led strips) 
 \end_layout
 
 \begin_layout Standard
@@ -589,7 +590,7 @@ Dynamic face and body expressions of the emotional Teo 2 and the emotional
 \end_layout
 
 \begin_layout Itemize
-more natural voice (IVONA text to speech)
+More natural voice (IVONA text to speech)
 \end_layout
 
 \begin_layout Standard
@@ -655,7 +656,7 @@ includemovie[poster=audioFile.png]{1cm}{1cm}{CiaoGiochiConMe.mp3}
 \end_layout
 
 \begin_layout Itemize
-proximity zone detection
+Proximity zone detection
 \end_layout
 
 \begin_layout Standard
@@ -663,7 +664,7 @@ proximity zone detection
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -711,7 +712,7 @@ Proximity zones
 \end_layout
 
 \begin_layout Itemize
-sound localization (with 3 microphones)
+Sound localization (with 3 microphones)
 \end_layout
 
 \begin_layout Standard
@@ -719,7 +720,7 @@ sound localization (with 3 microphones)
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
