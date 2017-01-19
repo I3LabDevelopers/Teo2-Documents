@@ -76,28 +76,13 @@
 
 \begin_body
 
-\begin_layout Subparagraph
-Input
-\end_layout
-
 \begin_layout Standard
-The therapist selects 
-\begin_inset Quotes fld
-\end_inset
-
-Teo2 Control
-\begin_inset Quotes frd
-\end_inset
-
- app and chooses 
-\begin_inset Quotes fld
-\end_inset
-
-Marco-Polo game - version 1
-\begin_inset Quotes frd
-\end_inset
-
-.
+For this version, the context of use would be during a therapy session that
+ is being realize in a sufficiently large space occupied by the child and
+ the robot Teo2 with the therapist as an external observer that limits to
+ control Teo, in case that is neccesary –such in a situation in which a
+ collision must be avoided, make it re-explain the dynamic, etc–, and to
+ complement the reinformance and the guidance to the child.
 \end_layout
 
 \begin_layout Subparagraph
@@ -105,37 +90,65 @@ Goal
 \end_layout
 
 \begin_layout Standard
-The goal of the game is to help the child to recognize spatial relations
- with Teo.
+The goal of the game is provide a controlled setting in which Teo and the
+ child can interact with a limited set of possibilities.
+ In this way, the child can learn to be comfortable with Teo.
+ Moreover, the game intends for the child to understand the dynamic of the
+ game and follow it to its conclusion.
 \end_layout
 
 \begin_layout Subparagraph
-Rules
+Interface
 \end_layout
 
 \begin_layout Standard
-The child and Teo share sufficiently large space to move around.
-\begin_inset Newline newline
-\end_inset
+The therapist has access to the computer application 
+\shape italic
 
-The game starts with a ’blindfolded’ Teo, which explains the child the dynamic
- of the game.
-\begin_inset Newline newline
-\end_inset
-
-Teo prompts the kid to move away from him.
-\begin_inset Newline newline
-\end_inset
-
-Anytime Teo needs help would ask 
 \begin_inset Quotes fld
 \end_inset
 
-Where are you, <name of the child>?
+Teo2Control
 \begin_inset Quotes frd
 \end_inset
 
- and the child must answer back 
+
+\shape default
+ in which she chooses 
+\shape italic
+Marcopolo game - version 1
+\shape default
+, to start its execution.
+\end_layout
+
+\begin_layout Subparagraph
+Dynamic of the game
+\end_layout
+
+\begin_layout Standard
+The child and Teo share sufficiently large space to move around, in principle,
+ a space greater or equal to 25 squared meters.
+ After the selection of the Marcopolo execution by the therapist, the game
+ starts with a 
+\begin_inset Quotes fld
+\end_inset
+
+blindfolded
+\begin_inset Quotes frd
+\end_inset
+
+ Teo, which explains to the child that it cannot see him and that he must
+ move further from him as he can.
+ Also, Teo explains that whenever it needs help to find him (the child),
+ it will call out 
+\begin_inset Quotes fld
+\end_inset
+
+Where are you?
+\begin_inset Quotes frd
+\end_inset
+
+ and that he (the child) must answer out loud 
 \begin_inset Quotes fld
 \end_inset
 
@@ -143,7 +156,7 @@ Teo, here!
 \begin_inset Quotes frd
 \end_inset
 
-.
+ (depicted in the figures below).
 \end_layout
 
 \begin_layout Standard
@@ -185,7 +198,7 @@ name "fig:image-1-3-1-3-1"
 
 \end_inset
 
-1st step of Marco-Polo1 game
+1st step of Marco-Polo1 game (Teo calls out for a clue) 
 \end_layout
 
 \end_inset
@@ -195,7 +208,15 @@ name "fig:image-1-3-1-3-1"
 
 \end_inset
 
-Teo will, then try to move towards the child.
+
+\end_layout
+
+\begin_layout Standard
+After the explanation, Teo will start the game and try to move around looking
+ to come close to the child.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
 placement H
 wide false
@@ -234,7 +255,7 @@ name "fig:image-1-3-1-3-2"
 
 \end_inset
 
-2nd step of Marco-Polo1 game
+2nd step of Marco-Polo1 game (The child answers Teo back)
 \end_layout
 
 \end_inset
@@ -244,8 +265,20 @@ name "fig:image-1-3-1-3-2"
 
 \end_inset
 
-If Teo is able to reach to the ’intimate region’ with the kid for a moment,
- Teo wins and shows happiness congratulating the kid for helping him.
+
+\end_layout
+
+\begin_layout Standard
+If Teo is able to reach the child close enough, that is to the 
+\begin_inset Quotes fld
+\end_inset
+
+intimate region
+\begin_inset Quotes frd
+\end_inset
+
+ (some 60cm or closer from the child), Teo will assume its victory and it
+ will show happiness congratulating the kid for helping him.
 \begin_inset Float figure
 placement H
 wide false
@@ -284,7 +317,7 @@ name "fig:image-1-3-1-3-3"
 
 \end_inset
 
-3rd step of Marco-Polo1 game
+3rd step of Marco-Polo1 game (Teo approaches the child)
 \end_layout
 
 \end_inset
@@ -295,32 +328,32 @@ name "fig:image-1-3-1-3-3"
 \end_inset
 
 Else, Teo keeps asking the kid for help and continues looking.
+ The expected end of the game would be a congratulated child hugging Teo.
 \end_layout
 
 \begin_layout Subparagraph
-Conclusion of the game
+Technological feasibility.
 \end_layout
 
 \begin_layout Standard
-The game ends when the child hugs Teo.
-\end_layout
-
-\begin_layout Subparagraph
-Feasibility
+The success in implementation of this scenario depends strongly in the following
+ remarks:
 \end_layout
 
 \begin_layout Itemize
-the accuracy of the microphones must be sufficient in order to locate the
- voice (0-90°, 91°-179°, 180°-269°, 270°-359° with respect to Teo)
+The accuracy of the sound localization algorithm must be sufficient in order
+ to locate the voice (0-90°, 91°-179°, 180°-269°, 270°-359° with respect
+ to Teo)
 \end_layout
 
 \begin_layout Itemize
-Teo processing power must be enough in order to process the sound localization
+Teo computational power must be enough in order to process the sound localizatio
+n
 \end_layout
 
 \begin_layout Itemize
-constraining the child to stay in a fixed spot until Teo finds him would
- allow to complete the game, even though is not mandatory for the implementation
+Constraining the child to stay in a fixed spot until Teo finds him would
+ allow to complete the game, even though is not mandatory for the implementation.
 \end_layout
 
 \end_body

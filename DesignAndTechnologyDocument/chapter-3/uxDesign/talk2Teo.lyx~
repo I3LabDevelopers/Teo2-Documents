@@ -98,13 +98,12 @@ alive
 \begin_layout Standard
 Next, the functionalities, tools and workflow designed to realize the scenario
  are described.
- Moreover, it is also explained how these are supposed to be used by the
- principal users (therapists and children).
- 
+ Moreover, it is also explained how these are supposed to be used and controlled
+ by the therapists.
 \end_layout
 
 \begin_layout Paragraph
-Input
+Interface.
 \end_layout
 
 \begin_layout Standard
@@ -1587,7 +1586,7 @@ Move/Rotate
 \end_layout
 
 \begin_layout Enumerate
-Speak
+Speak (predefined phrases)
 \end_layout
 
 \begin_layout Enumerate
@@ -1662,7 +1661,7 @@ Face animation
 
 \begin_deeper
 \begin_layout Standard
-Every 3 sec a face animation occurs
+Every three seconds a face animation, of the current mood, occurs.
 \end_layout
 
 \end_deeper
@@ -1674,8 +1673,8 @@ Breathing
 
 \begin_deeper
 \begin_layout Standard
-A fading effect on the led strips simulates the breathing (whose frequence
- depends on the mood)
+A fading effect on the led strips simulates the breathing –whose frequence
+ depends on the mood.
 \end_layout
 
 \end_deeper
@@ -1687,9 +1686,10 @@ Wake up
 
 \begin_deeper
 \begin_layout Standard
-In the idle state Teo is sleeping, and it is snorling.
- Teo has to be awakened by the child which has to touch it or talk to it.
- Once woke up, Teo says 
+In the idle state Teo is sleeping, and it is snoring.
+ Teo has to be awakened by the child which has to talk to it or can be awaken
+ by the therapist through the joypad.
+ Once woken up, Teo says 
 \begin_inset Quotes fld
 \end_inset
 
@@ -1709,7 +1709,7 @@ Hit
 
 \begin_deeper
 \begin_layout Standard
-Everytime the child hits Teo, it becomes sad and cries.
+When child hits Teo, it gets sad and cries.
 \end_layout
 
 \end_deeper
@@ -1721,8 +1721,9 @@ Where are you?
 
 \begin_deeper
 \begin_layout Standard
-Everytime the children go away from Teo (from the social zone to the public
- one) Teo becomes scared saying 
+When the child goes away from Teo, that is when the child is not perceived
+ close to Teo –closer that the personal zone (< 2m)–, Teo gets sad saying
+ 
 \begin_inset Quotes fld
 \end_inset
 
@@ -1731,7 +1732,8 @@ Where are you?
 \end_inset
 
 .
- When the children comes back, Teo becomes happy saying 
+ It rotates a little as if it were looking for the child.
+ When the children comes back, Teo turns happy saying 
 \begin_inset Quotes fld
 \end_inset
 
@@ -1739,20 +1741,23 @@ Welcome back!
 \begin_inset Quotes frd
 \end_inset
 
-
+.
 \end_layout
 
 \end_deeper
 \begin_layout Enumerate
 
 \bar under
-Scheduled low profile non-utterances
+Prompts
 \end_layout
 
 \begin_deeper
 \begin_layout Standard
-Every 5 sec of inactivy, Teo makes a low profile non-linguistic utterance
- (randomly chosen)
+When Teo has random time between 30 to 50 seconds of inactivity (no other
+ behavior, either manual or automatic, has been executed), Teo makes a low
+ profile non-linguistic utterance or a random phrase.
+ This with the intention to keep the robot active and trying to engage the
+ children in some kind of interaction.
 \end_layout
 
 \end_deeper

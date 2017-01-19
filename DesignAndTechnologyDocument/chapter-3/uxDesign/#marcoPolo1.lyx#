@@ -76,20 +76,13 @@
 
 \begin_body
 
-\begin_layout Subparagraph
-Input
-\end_layout
-
 \begin_layout Standard
-The therapist selects 
-\begin_inset Quotes fld
-\end_inset
-
-Marco-Polo game - version 1
-\begin_inset Quotes frd
-\end_inset
-
-.
+For this version, the context of use would be during a therapy session that
+ is being realize in a sufficiently large space occupied by the child and
+ the robot Teo2 with the therapist as an external observer that limits to
+ control Teo, in case that is neccesary –such in a situation in which a
+ collision must be avoided, make it re-explain the dynamic, etc–, and to
+ complement the reinformance and the guidance to the child.
 \end_layout
 
 \begin_layout Subparagraph
@@ -97,30 +90,73 @@ Goal
 \end_layout
 
 \begin_layout Standard
-The goal of the game is to help the child to recognize spatial relations
- with Teo.
+The goal of the game is provide a controlled setting in which Teo and the
+ child can interact with a limited set of possibilities.
+ In this way, the child can learn to be comfortable with Teo.
+ Moreover, the game intends for the child to understand the dynamic of the
+ game and follow it to its conclusion.
 \end_layout
 
 \begin_layout Subparagraph
-Rules
+Interface
 \end_layout
 
 \begin_layout Standard
-The child and Teo share sufficiently large space to move around.
-\begin_inset Newline newline
+The therapist has access to the computer application 
+\shape italic
+
+\begin_inset Quotes fld
 \end_inset
 
-The game starts with a ’blindfolded’ Teo, which explains the child the dynamic
- of the game.
-\begin_inset Newline newline
+Teo2Control
+\begin_inset Quotes frd
 \end_inset
 
-Teo prompts the kid to move away from him.
-\begin_inset Newline newline
+
+\shape default
+ in which she chooses 
+\shape italic
+Marcopolo game - version 1
+\shape default
+, to start its execution.
+\end_layout
+
+\begin_layout Subparagraph
+Dynamic of the game
+\end_layout
+
+\begin_layout Standard
+The child and Teo share sufficiently large space to move around, in principle,
+ a space greater or equal to 25 squared meters.
+ After the selection of the Marcopolo execution by the therapist, the game
+ starts with a 
+\begin_inset Quotes fld
 \end_inset
 
-Anytime Teo needs help would ask ’Where are you, (name of the child)?’ and
- the child must answer back ’Teo, here!’.
+blindfolded
+\begin_inset Quotes frd
+\end_inset
+
+ Teo, which explains to the child that it cannot see him and that he must
+ move further from him as he can.
+ Also, Teo explains that whenever it needs help to find him (the child),
+ it will call out 
+\begin_inset Quotes fld
+\end_inset
+
+Where are you?
+\begin_inset Quotes frd
+\end_inset
+
+ and that he (the child) must answer out loud 
+\begin_inset Quotes fld
+\end_inset
+
+Teo, here!
+\begin_inset Quotes frd
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -172,7 +208,12 @@ name "fig:image-1-3-1-3-1"
 
 \end_inset
 
-Teo will, then try to move towards the child.
+
+\end_layout
+
+\begin_layout Standard
+After the explanation, Teo will, then, start the game and try to move around
+ looking to come close to the child.
 \begin_inset Float figure
 placement H
 wide false
@@ -283,306 +324,6 @@ The game ends when the child hugs Teo.
 \end_layout
 
 \begin_layout Subparagraph
-HW and SW requirements
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float table
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\align center
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-noindent
-\backslash
-resizebox{
-\backslash
-textwidth}{!}{%
-\end_layout
-
-\end_inset
-
-
-\size small
-
-\begin_inset Tabular
-<lyxtabular version="3" rows="7" columns="3">
-<features booktabs="true" tabularvalignment="middle">
-<column alignment="center" valignment="top" width="0pt">
-<column alignment="center" valignment="top" width="0pt">
-<column alignment="center" valignment="top" width="0pt">
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\series bold
-Use:
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\series bold
-Hardware:
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\series bold
-Software:
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Determine spatial orientation based upon the child's call
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Microphones
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Sound Localization
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Verbal communication for the facilitator and rewarding roles
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Speakers
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Voice Synthesizer
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Emotional rewarding
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-LED Matrix and strips
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Emotional face generation
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Measure the region of interaction between Teo and the child's
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Distance/Motion sensors
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Child's proximity and presence
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-To detect whether the child touch Teo to indicate he found him
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Pressure sensors
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Touch detection
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Teo movement
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Motors
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Control
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
-
-\end_inset
-
-
-\size default
- 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-\begin_inset Argument 1
-status open
-
-\begin_layout Plain Layout
-HW and SW Marco-Polo1 requirements
-\end_layout
-
-\end_inset
-
-
-\begin_inset CommandInset label
-LatexCommand label
-name "tab:formal-table-1-2-1"
-
-\end_inset
-
-HW and SW requirements of Marco-Polo1 game
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subparagraph
 Feasibility
 \end_layout
 
@@ -592,11 +333,11 @@ the accuracy of the microphones must be sufficient in order to locate the
 \end_layout
 
 \begin_layout Itemize
-the 
+Teo processing power must be enough in order to process the sound localization
 \end_layout
 
 \begin_layout Itemize
-constraining the child to stay in a fixed spot until Teo finds him woud
+constraining the child to stay in a fixed spot until Teo finds him would
  allow to complete the game, even though is not mandatory for the implementation
 \end_layout
 
