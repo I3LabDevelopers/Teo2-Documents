@@ -72,12 +72,16 @@
 \begin_body
 
 \begin_layout Standard
-The software of 
+The software implemented for the 
 \shape italic
 Talk2Teo
 \shape default
- is distributed in the following way: the manual behaviours are managed
- mainly by the PC, the automatic ones only by Teo2 (Arduino).
+ functionalities are composed by the computer application and control software
+ and the arduino firmware that handles the logic that makes possible the
+ control and behaviors of Teo.
+ A comprehensive description of both parts are provided below.
+ Finally, the communication protocol between the PC and Teo is described
+ and summarized.
 \end_layout
 
 \begin_layout Paragraph
@@ -85,10 +89,20 @@ PC
 \end_layout
 
 \begin_layout Standard
-The pc program is called Teo2Control, which provides support to Teo2 internal
- logic and let the therapist control Teo2 through the Xbox 360 controller.
- The application communicates with Teo2 through Bluetooth serial port, it
- is also connected to a Bluetooth speaker.
+The PC application is called 
+\begin_inset Quotes eld
+\end_inset
+
+Teo2Control
+\begin_inset Quotes erd
+\end_inset
+
+, which provides support both to Teo2's firmware and let the therapist control
+ Teo2 through the Xbox 360 controller.
+ The application communicates with Teo2 through the Bluetooth connection
+ and, also, handles the connection with Bluetooth speaker embedded in Teo2's
+ body.
+ 
 \end_layout
 
 \begin_layout Subparagraph
@@ -101,8 +115,8 @@ Functionality description
 Control Teo2
 \bar default
 : the therapist uses the Xbox controller to directly control Teo2.
- Xbox input is caught and parsed by Teo2 control which will forward the
- requested command to Teo2 via Bluetooth.
+ Xbox input is caught and parsed by Teo2Control application which will forward
+ the requested command to Teo2 via Bluetooth.
 \end_layout
 
 \begin_layout Enumerate
@@ -111,11 +125,31 @@ Control Teo2
 Support Teo2:
 \bar default
  Teo2 is unable to communicate with Bluetooth speaker, thus to do so it
- has to send a request to the pc.
- Upon receiving messages from Teo2, Teo2 Control will parse them and perform
+ has to send a request for the PC to handle the functionality.
+ Upon receiving messages from Teo2, Teo2Control will parse them and perform
  actions accordingly.
- This can include send messages back to Teo2 or send audio files to the
- Bluetooth speaker.
+ This can include send messages back to Teo2 or playback audio files through
+ the Bluetooth speaker.
+\end_layout
+
+\begin_layout Enumerate
+
+\bar under
+Joypad (Xbox 360 controller) configuration:
+\bar default
+ this is a functionality that allows the therapist to assign to each button
+ of the controller a specific function.
+ Said functionality is provided through the GUI 
+\begin_inset Quotes eld
+\end_inset
+
+Teo2Setting
+\begin_inset Quotes erd
+\end_inset
+
+ that allows to choose between three pre-defined presets or to make a custom
+ configuration.
+ 
 \end_layout
 
 \begin_layout Subparagraph
@@ -124,10 +158,10 @@ Architecture description
 
 \begin_layout Standard
 Teo2 Control uses an event based architecture, its different components
- communicates through events (like input received from Xbox 360 controller
- or Bluetooth).
- This architecture permit the application to be fully scalable as each function
- or method is independent from the others.
+ communicates through events (such as the input received from Xbox 360 controlle
+r or the commands/messages received through the Bluetooth).
+ This architecture permits the application to be fully scalable as each
+ function or method is independent from the others.
 \begin_inset Newline newline
 \end_inset
 
@@ -136,7 +170,7 @@ Teo2 Control uses an event based architecture, its different components
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -188,6 +222,12 @@ Talk2Teo
 UML models
 \end_layout
 
+\begin_layout Standard
+The PC application Teo2Control component diagram and sequence diagram are
+ described to help better understand the structure and functionality of
+ this application.
+\end_layout
+
 \begin_layout Enumerate
 BTManager.
  This component is responsible of receiving and sending Bluetooth messages.
@@ -205,12 +245,21 @@ XBManager.
 
 \begin_layout Enumerate
 Parser.
- The Parser is the logic of Teo2 Control.
- It decides which action to take depending on the input received, when the
- decision is made it will raise an event alerting the BTManager.
- Using Teo2 Setting is possible to switch between 3 premade sets of commands
- for the controller and to set a custom set; Teo2 control will follow the
- indications in the selected XML file, which maps every key to a command.
+ This is the logic of Teo2 Control.
+ It decides which action to take depending on the input received.
+ When the decision is made it will raise an event alerting the BTManager.
+ Teo2Control will follow the indications provided by an XML file, which
+ maps every key to a command.
+ Using 
+\begin_inset Quotes eld
+\end_inset
+
+Teo2Setting
+\begin_inset Quotes erd
+\end_inset
+
+ GUI this XML file is generated according to the mapping of functions selected
+ by the user.
 \begin_inset Newline newline
 \end_inset
 
@@ -219,7 +268,7 @@ Parser.
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -266,32 +315,38 @@ UML components diagram of Teo2Control
 \end_layout
 
 \begin_layout Standard
-Incoming and outgoing messages and input from both Xbox and Bluetooth are
- stored in shared buffers to which each component access when a certain
- event is raised.
- For example if a message is received from the Bluetooth port connected
- to Teo2 BTManager will push it in the BT input buffer and raise an event
- to alert the Parser which will pop the message from the same buffer.
+The communication between the components described in Figure 3.13 are handled
+ by a set of buffers, that is, incoming and outgoing messages, resulting
+ both from the use of the joypad and the Bluetooth data, are stored in shared
+ buffers to which each component accesses when a determined event is raised.
+ For example, if a message is received from the Bluetooth port connected
+ to Teo2-BTManager, this last one will push it in the BT input buffer and
+ raise an event to alert the Parser, that will finally pop the message from
+ that buffer.
+ The same 
 \begin_inset Newline newline
 \end_inset
 
-The System uses 3 buffers:
+The system uses three buffers:
 \end_layout
 
 \begin_layout Itemize
-BT input buffer
+BT input buffer: it transmits messaged received to the Parser to handle.
 \end_layout
 
 \begin_layout Itemize
-BT output buffer
+BT output buffer: it conveys the result of the Parser to the BTManager to
+ output a message for Teo2.
 \end_layout
 
 \begin_layout Itemize
-XB input buffer
-\begin_inset Newline newline
-\end_inset
+XB input buffer: it contains the input coming from the use of the joypad
+ to be read and processed by the Parser.
+\end_layout
 
-
+\begin_layout Standard
+This dynamic of the communication between this components through these
+ structures are describe by the sequence diagram in Figure 3.14.
 \end_layout
 
 \begin_layout Standard
@@ -299,7 +354,7 @@ XB input buffer
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -332,8 +387,8 @@ name "fig:image-1-4-2-3-1-4-1-1-1-1-1"
 
 \end_inset
 
-This diagram describes the workflow of the system in the case in which the
- user is using the Xbox controller to control Teo2.
+Diagram describing the workflow of the system in the case in which the user
+ is using the Xbox controller to control Teo2.
  
 \end_layout
 
@@ -400,15 +455,138 @@ Since the Arduino board inside Teo2 is unable to communicate with the Bluetooth
 \end_layout
 
 \begin_layout Paragraph
-Arduino
+Teo2's Firmware
 \end_layout
 
 \begin_layout Standard
-The Arduino sketch follows this logic:
-\begin_inset Newline newline
+In order to handle the multiple-inputs system that is Teo2, the finite state
+ machine presented in the Figure 3.16 was implemented.
+ This machine was designed to be able to handle the functionalities required
+ by the Talk2Teo scenario; namely, to handle manual commands coming from
+ the PC control application (i.e.
+ the result of the joypad control) and the triggering of the automatic behaviors
+ for Teo.
+ The two main characteristics was to allow for actuation and sensing control
+ in a non-blocking manner and also with the intention to allow easy addition
+ of new automatic behaviors, manual commands and sensing capabilities.
+ Following the tasks realized for each state are explained.
+\end_layout
+
+\begin_layout Itemize
+Sense: this state handles the functions to update the state of Teo through
+ its sensors.
+ For which it collects information from distance sensors, pressure sensors,
+ microphones, accelerometer/gyroscope, etc., processes it and updates state
+ variables that serve to have a model of part of the environment as region
+ of interaction (i.e.
+ intimate, personal, social, etc), contact type (hit/hug), sound localization.
+ Also, update counters that keep track of time for scheduled tasks such
+ as face animations and message sending.
+ Moreover, it also polls for new communication data.
+\end_layout
+
+\begin_layout Itemize
+Verify rules: if no manual command was received while in the sense state,
+ 
+\begin_inset Quotes eld
 \end_inset
 
+Verify rules
+\begin_inset Quotes erd
+\end_inset
 
+ is executed and it verifies the satisfaction of some rules that are above
+ all automatic behaviors.
+ This rules are thought, mainly, for safety such as stop motion when an
+ obstacle is detected to be close enough and stop movements when a hit is
+ detected.
+\end_layout
+
+\begin_layout Itemize
+Choose behavior: this state is executed after 
+\begin_inset Quotes eld
+\end_inset
+
+Verify rules
+\begin_inset Quotes erd
+\end_inset
+
+ when no automatic behavior is being executed.
+ When executed, in a priority-based manner, the conditions for the triggering
+ of a behavior are checked.
+ Whenever a condition is satisfied for a behavior to execute, the control
+ is given to the 
+\begin_inset Quotes eld
+\end_inset
+
+Auto execute
+\begin_inset Quotes erd
+\end_inset
+
+ state.
+ When no behavior is selected, then the control is given back to the 
+\begin_inset Quotes eld
+\end_inset
+
+Sense
+\begin_inset Quotes erd
+\end_inset
+
+ state.
+\end_layout
+
+\begin_layout Itemize
+Auto execute: this state is reached after 
+\begin_inset Quotes eld
+\end_inset
+
+Choose Behavior
+\begin_inset Quotes erd
+\end_inset
+
+ if the conditions are satisfied to trigger a behavior or from the 
+\begin_inset Quotes eld
+\end_inset
+
+Verify rules
+\begin_inset Quotes erd
+\end_inset
+
+ state when the machine is already executing an automatic behavior.
+ In this case, the function that handles the behaviors is invoked and then
+ gets back to the 
+\begin_inset Quotes eld
+\end_inset
+
+Sense
+\begin_inset Quotes erd
+\end_inset
+
+ state.
+\end_layout
+
+\begin_layout Itemize
+Manual execute: this state is called when in the 
+\begin_inset Quotes eld
+\end_inset
+
+Sense
+\begin_inset Quotes erd
+\end_inset
+
+ state a command is received and no automatic behavior is currently executing.
+ In this case, the command executer is invoked.
+ In this case, the state machine will remained in this state until the manual
+ command has finished executing, in which case it the gives back the control
+ to the 
+\begin_inset Quotes eld
+\end_inset
+
+Sense
+\begin_inset Quotes erd
+\end_inset
+
+ state.
 \end_layout
 
 \begin_layout Standard
@@ -416,7 +594,7 @@ The Arduino sketch follows this logic:
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -449,7 +627,7 @@ name "fig:image-1-4-2-3-1-4-1-1"
 
 \end_inset
 
-Final state machine of Talk2Teo logic
+State machine of Talk2Teo logic
 \end_layout
 
 \end_inset
@@ -460,6 +638,39 @@ Final state machine of Talk2Teo logic
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+This firmware for Talk2Teo was implemented in such a way to allow for an
+ easy insertion into a more complex logic, mainly, to integrate the Talk2Teo
+ functionalities with future ones.
+ Furthermore, for extending the manual commands and the automatic behaviors,
+ also the state machine structure was exploited.
+ Henceforth, for implementing new behaviors is simply a matter to implement
+ two functions.
+ The first one that would be called in the 
+\begin_inset Quotes eld
+\end_inset
+
+Choose behavior
+\begin_inset Quotes erd
+\end_inset
+
+ state that will check the conditions for execution and decide whether is
+ possible, if so it will simply set a function pointer and realize the initializ
+ation process for the execution of the behavior.
+ The second one will be a machine state that will contain the logic to handle
+ the actions that compose the behaviors.
+\end_layout
+
+\begin_layout Standard
+Similarly, for the manual commands to add a manual command also two functions
+ are needed.
+ The first one, being a handler that is the callback for the received command,
+ that will set a function pointer to the logic of execution and do any initializ
+ation that is necessary.
+ The second one will be the function containing the logic and the actions
+ to execute.
 \end_layout
 
 \begin_layout Paragraph
@@ -469,6 +680,9 @@ Communication protocol
 \begin_layout Standard
 To communicate with Teo2 a set of fixed commands is used, this set defines
  a protocol of communication between Teo2 and the computer application.
+ In Table 3.6 the protocol of messages from the PC to Teo are listed and
+ explained.
+ Similarly, in the Table 3.7 the messages from Teo2 to the PC are shown.
 \end_layout
 
 \begin_layout Standard

@@ -76,7 +76,8 @@ HW architecture
 \end_layout
 
 \begin_layout Standard
-The architecture is the same of the basic version of Teo2
+The robot hardware architecture is the same of the basic version of Teo2
+ described in
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Teo2"
@@ -84,6 +85,45 @@ key "Teo2"
 \end_inset
 
 .
+ However, the computer had to be included as part of the control architecture
+ for the robot because the bluetooth network had to been centralized on
+ the PC; the module installed on Teo is not able to create a network of
+ devices.
+ Henceforth, the speaker could not be managed at the same time the data
+ link between Teo and the PC was being used.
+\end_layout
+
+\begin_layout Standard
+Also, the platform with which the project was started had several issues
+ in many of the subsystems.
+ Therefore, to realize the scenarios some modifications were done to solve
+ them.
+ However, given the time contraints, only the subsystems to be used by the
+ scenarios were attended; there are some problems to be solved before every
+ subsystem is at its full potential.
+ The following are salient changes made in the hardware system of Teo2:
+\end_layout
+
+\begin_layout Enumerate
+The Arduino pins connected to the motors' drivers 28, 38 and 48 have been
+ remapped to 9, 10 and 11.
+ Given that the original pins were not capable of providing a PWM signal
+ that were required to control the motor speed, this was made.
+\end_layout
+
+\begin_layout Enumerate
+The Arduino pins used for Bluetooth were remapped from 10 and 11 to 14 (Tx)
+ and 15 (Rx) due to the conflicts with pins needed to control the mortors.
+\end_layout
+
+\begin_layout Enumerate
+The bluetooth speaker has been changed with a JBL GO: the new speaker gives
+ better performance and audio quality with respect to the previous one.
+\end_layout
+
+\begin_layout Enumerate
+The distance sensors, namely the sonar and Sharp IR, were placed and connected
+ and firmware control was implemented.
 \end_layout
 
 \begin_layout Standard
@@ -138,28 +178,25 @@ Architecture of Teo2 project
 
 \end_layout
 
-\begin_layout Standard
-The main innovations are:
-\end_layout
-
-\begin_layout Enumerate
-the bluetooth network is centralized on the PC
-\end_layout
-
-\begin_layout Enumerate
-Teo2 can be controlled through a Xbox joypad
-\end_layout
-
-\begin_layout Enumerate
-the motors are connected to the Arduino pins 9, 10 and 11
-\end_layout
-
 \begin_layout Subsection
 SW architecture
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Standard
+Next is presented the software architecture of the 
+\begin_inset Quotes eld
+\end_inset
+
 Talk2Teo
+\begin_inset Quotes erd
+\end_inset
+
+ scenario as it was the one implemented to completion.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Talk2Teo Scenario
 \end_layout
 
 \begin_layout Standard
@@ -173,15 +210,17 @@ filename "talk2Teo.lyx"
 \end_layout
 
 \begin_layout Subsubsection
-MarcoPolo
+MarcoPolo Scenario
 \end_layout
 
 \begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand input
+filename "marcoPolo.lyx"
 
-\shape italic
-MarcoPolo
-\shape default
- instead is totally on Teo2.
+\end_inset
+
+
 \end_layout
 
 \end_body

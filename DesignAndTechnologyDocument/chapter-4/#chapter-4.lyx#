@@ -74,8 +74,19 @@
 \begin_body
 
 \begin_layout Standard
-First of all, we would make a distinction between the Teo2 we have made,
- the prototype, and a hypothetical final product.
+For the evaluation plans, first of all, it should be made a distinction
+ between the Teo2 resulting from different phases of the development process.
+ The aim of the project described in this document is the development of
+ Teo2 scenarios in prototyping phase.
+ From the scenarios presented in the Chapter 3, 
+\begin_inset Quotes fld
+\end_inset
+
+Talk2Teo
+\begin_inset Quotes frd
+\end_inset
+
+ is the one implemented so far
 \end_layout
 
 \begin_layout Subsection
@@ -1278,8 +1289,8 @@ For the therapists, we propose a Teo that is remotely controlled, just at
  kid around the room.
  We want Teo to be versatile for the therapist and the dynamic she sees
  fit to develop with the child.
- Finally, we want Teo to gather informations about the child through its
- sensors in order to give the therapist a structured 
+ Finally, we want Teo to gather data about the child through its sensors,
+ in order to give the therapist useful structured informations.
 \begin_inset Newline newline
 \end_inset
 

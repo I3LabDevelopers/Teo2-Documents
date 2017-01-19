@@ -231,7 +231,7 @@ key "Teo2"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -386,7 +386,7 @@ name "tab:formal-table-1-2-2"
 
 \end_inset
 
-Differnces between the basic Teo 2 and the emotional one 
+Differences between the basic Teo 2 and the emotional one 
 \end_layout
 
 \end_inset

@@ -74,8 +74,23 @@
 \begin_body
 
 \begin_layout Standard
-First of all, we would make a distinction between the Teo2 we have made,
- the prototype, and a hypothetical final product.
+For the evaluation plans, first of all, it should be made a distinction
+ between the Teo2 resulting from different phases of the development process.
+ The aim of the project described in this document is the development of
+ Teo2 scenarios in prototyping phase.
+ From the scenarios presented in the Chapter 3, 
+\begin_inset Quotes fld
+\end_inset
+
+Talk2Teo
+\begin_inset Quotes frd
+\end_inset
+
+ is the one implemented so far, henceforth, the one being evaluated as a
+ prototype.
+ However, it is also presented the final product goal: the full equipped
+ version of Teo is described and the evaluation plans to valuate such product
+ is also described in detail.
 \end_layout
 
 \begin_layout Subsection
@@ -83,11 +98,11 @@ Prototype
 \end_layout
 
 \begin_layout Standard
-It is the current state of Teo 2, which implements 
+This prototype consists on the implementation of the 
 \shape italic
-Talk2Teo
+Talk2Teo 
 \shape default
-.
+scenario described in Chapter 3.
 \end_layout
 
 \begin_layout Subsubsection
@@ -104,7 +119,7 @@ As the system described consist of different parts is it necessary to plan
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -445,7 +460,7 @@ Evaluation plan of computer application
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -919,7 +934,7 @@ Evaluation plan of robot control system
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -1270,26 +1285,28 @@ Final product
 \end_layout
 
 \begin_layout Standard
-For the therapists, we propose a Teo that is remotely controlled, just at
- the reach of their hands, so they can trigger emotional behaviors as rewards
- or a demonstration for cause-effect relationship, we want the therapist
- to make Teo speak so it can prompt the child to follow the activity, we
- want to be able of moving it around so it can be used as a guide for the
- kid around the room.
- We want Teo to be versatile for the therapist and the dynamic she sees
- fit to develop with the child.
- Finally, we want Teo to gather data about the child through its sensors,
- in order to give the therapist useful structured informations.
+This final product consists of twofold functional robot that will serves
+ both to the therapists and the children.
+ For the therapists, a Teo that is remotely controlled is proposed, so they
+ can trigger emotional behaviors as rewards or a demonstration for cause-effect
+ relationship, it will be possible for the therapist to make Teo speak so
+ it can prompt the child to follow the activity, to make it move around
+ so it can be used as a guide for the kid around the room.
+ Teo2 will be versatile for the therapist and the dynamic she sees fit to
+ develop with the child.
+ Finally, it is envisioned for Teo to gather data about the child through
+ its sensors, in order to give the therapist useful structured informations.
 \begin_inset Newline newline
 \end_inset
 
-For the children, we propose a Teo that has set of behaviors that will make
- it a likable companion for a child.
- We want it to react to hug, hits and caresses, to show interest and autonomousl
-y motivate the continuation of story-telling activities, to have a set of
- games to play with the children, to call out for the child when Teo can’t
- find him near.
- We want to create a Teo that can be a friend to the child.
+For the children, Teo will have a set of behaviors that will make it a likable
+ companion for them.
+ It shoudl be able to react to hug, hits and caresses, to show interest
+ and autonomously motivate the continuation of story-telling activities,
+ to have a set of games to play with the children, to call out for the child
+ when Teo can’t find him near.
+ Possibly, extend the capabilities of Teo to include advance emotional detection
+ to provide more emotionally consistent behaviors.
 \end_layout
 
 \begin_layout Subsubsection
@@ -1299,15 +1316,9 @@ Evaluating processes
 \begin_layout Standard
 For the final product, the computer application and the robot control system
  will be evaluated applying the procedure described above for the prototype.
-\begin_inset Newline newline
-\end_inset
-
-The robot features, instead, will be evaluated in the following task-driven
+ The robot features, instead, will be evaluated in the following task-driven
  procedure.
-\begin_inset Newline newline
-\end_inset
-
-There will be 10 therapy sessions, one per week, for a period of 2.5 months.
+ There will be 10 therapy sessions, one per week, for a period of 2.5 months.
  After each session the following aspect will be evaluated:
 \end_layout
 
