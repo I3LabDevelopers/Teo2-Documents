@@ -90,19 +90,19 @@ During the development of this project many constraints and limitations
 \end_layout
 
 \begin_layout Standard
-The implementation of the Marcopolo scenario was heavily hindered by the
- development of a sound localization algorithm with the enough affidability
- to provide even an acceptable performance.
+Firstly, the implementation of the Marcopolo scenario was heavily hindered
+ by the development of a sound localization algorithm with the enough accuracy
+ to provide even an acceptable performance of the game.
  The legacy implementation received was thought to fail because of the microphon
 es, however, the information extracted from the sound signals to be used
  by this algorithm was too little (only single amplitude measurements that
- are too susceptible to noise) to expect a robust enough localization of
+ were too susceptible to noise) to expect a robust enough localization of
  the source sound.
  To improve the algorithm, it was taken the more sensible option available
- to achieve the desire precision in the sound source localization that was
- that of using an Interaural Time Difference approach that bases the estimation
- of the position in the delay between the signals measured by the triple
- of microphones.
+ to achieve the desire precision in the sound source localization, that
+ was that of using an Interaural Time Difference approach that bases the
+ estimation of the position in the delay between the signals measured by
+ the trio of microphones.
  
 \end_layout
 
@@ -117,10 +117,11 @@ However, to implement this solution three main problems with the computational
  the reliability of the computations.
  Moreover, the time step between samples of the signal of 1/16kHz would
  not provide the resolution required to measure the delay between the signals
- with enough accuracy.
+ with enough accuracy –contrained by the distance between the microphones,
+ which determine the delay between the signals.
  On the other hand, the memory in the Arduino Mega (8MB) was not enough
- to store more than ~64ms of each signal (sampled at 16kHz) and for it was
- reduced the amount of information available to run the algorithm.
+ to store more than ~64ms of each signal (sampled at 16kHz) and it was reduced
+ the amount of information available to run the algorithm.
  Finally, the computation of the delay for this little sample resulted in
  completely erroneous results that took ~3sec to process for just 64ms of
  data.
@@ -167,17 +168,31 @@ The solution proposed in this project is still far from its full potential.
 \end_layout
 
 \begin_layout Standard
-One of the main things that could be done in future works with Teo2 would
- be to complement the computational architecture, that is, distribute the
- tasks of collecting data from sensors and control of actuators to the Arduino's
- microcontroller and add a mini PC or Raspberry Pi that could help in handling
- more complex algorithms to enhance Teo's intelligence.
+One of the main aspects that could be modified in future works with Teo2
+ would be to complement the computational architecture with more processing
+ power, that is, distribute the tasks of collecting data from sensors and
+ control of actuators to the Arduino's microcontroller and add a mini PC
+ or Raspberry Pi that could help in handling more complex algorithms to
+ enhance Teo's intelligence.
  For instance,
 \end_layout
 
 \begin_layout Itemize
 Easily compute digital signal processing algorithm, in order to deal with
  voice recognition, face detection and emotion detection.
+\end_layout
+
+\begin_layout Itemize
+Add an external ADC able to handle the sampling of the audio signal at rate
+ of minimun 40kHz for each microphone, that together with the increase of
+ the processing power, be able to implement a robust sound localization
+ algorithm.
+\end_layout
+
+\begin_layout Itemize
+Add a well-designed power stage in the electronics of Teo in order to provide
+ the required power to the LED matrix to achive its full brightness and
+ to guarantee a reliable performance of the system under demanding situations.
 \end_layout
 
 \begin_layout Itemize
@@ -214,21 +229,9 @@ Talk2Teo
 \end_layout
 
 \begin_layout Itemize
-Provide Teo with a broadcasting device to project information in a monitor
- in the room where the therapy sessions are developed.
-\end_layout
-
-\begin_layout Standard
-The synthesized voice could be replaced with a real one in order to get
- better engagement of the children (even if a synthesized voice allow to
- modify the sentences more easly).
-\begin_inset Newline newline
-\end_inset
-
-Teo2 model leaves space to many possibilities in terms of usage and advantages
- within the therapy.
- Several new games and interaction can be designed using Teo2, thanks to
- its versatility.
+Evaluate if the synthesized voice could be replaced with a real one in order
+ to get better engagement of the children vs the flexibility provided by
+ Text-to-Speech software.
 \end_layout
 
 \end_body

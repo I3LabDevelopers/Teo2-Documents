@@ -163,28 +163,41 @@ Future directions
 \end_layout
 
 \begin_layout Standard
-Our solution is still far from its potential.
-\begin_inset Newline newline
-\end_inset
+The solution proposed in this project is still far from its full potential.
+\end_layout
 
-Arduino could be replaced with a more powerful in order to:
+\begin_layout Standard
+One of the main aspects that could be modified in future works with Teo2
+ would be to complement the computational architecture with more processing
+ power, that is, distribute the tasks of collecting data from sensors and
+ control of actuators to the Arduino's microcontroller and add a mini PC
+ or Raspberry Pi that could help in handling more complex algorithms to
+ enhance Teo's intelligence.
+ For instance,
 \end_layout
 
 \begin_layout Itemize
-Easily compute digital signal processing, in order to deal with 
-\series bold
-voice recognition
-\series default
- and 
-\series bold
-face detection
-\series default
-.
+Easily compute digital signal processing algorithm, in order to deal with
+ voice recognition, face detection and emotion detection.
 \end_layout
 
 \begin_layout Itemize
-Have enough resources to have an artificial intelligence, which would allow
- Teo to be a companion in the children life, not 
+Add an external ADC able to handle the sampling of the audio signal at rate
+ of minimun 40kHz for each microphone, that together with the increase of
+ the processing power, be able to implement a robust sound localization
+ algorithm.
+\end_layout
+
+\begin_layout Itemize
+Add a well-designed power stage in the electronics of Teo in order to provide
+ the required power to the LED matrix to achive its full brightness and
+ to guarantee a reliable performance of the system under demanding situations.
+\end_layout
+
+\begin_layout Itemize
+Provide enough resources to have an artificial intelligence, which would
+ allow Teo to be a more natural play companion in the children lives, not
+ 
 \begin_inset Quotes fld
 \end_inset
 
@@ -196,21 +209,28 @@ only
 \end_layout
 
 \begin_layout Itemize
-Centralize the network around Teo, leaving the computer application only
- to set controller commands or other features before the session starts.
+Centralize the network and processing in Teo, so the computer is not as
+ essential as in the current state.
 \end_layout
 
-\begin_layout Standard
-The synthesized voice could be replaced with a real one in order to get
- better engagement of the children (even if a synthesized voice allow to
- modify the sentences more easly).
-\begin_inset Newline newline
+\begin_layout Itemize
+For the scenario 
+\begin_inset Quotes fld
 \end_inset
 
-Teo2 model leaves space to many possibilities in terms of usage and advantages
- within the therapy.
- Several new games and interaction can be designed using Teo2, thanks to
- its versatility.
+Talk2Teo
+\begin_inset Quotes frd
+\end_inset
+
+, a tablet application could be implemented in order to substitute the joypad
+ to control Teo, so to provide a possible better and more adaptive user
+ experience for the therapists.
+\end_layout
+
+\begin_layout Itemize
+Evaluate if the synthesized voice could be replaced with a real one in order
+ to get better engagement of the children vs the flexibility provided by
+ Text-to-Speech software.
 \end_layout
 
 \end_body
