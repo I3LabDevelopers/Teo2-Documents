@@ -78,23 +78,84 @@ What was left
 \end_layout
 
 \begin_layout Standard
-For the lack of time, unfortunaately we hadn't implemented a logger of data
- (about distance and touch) collected by the Teo sensors.
-\begin_inset Newline newline
+During the development of this project many constraints and limitations
+ were encountered.
+ The principal ones were time and the state of the hardware infrastructure
+ received.
+ Even though many issues were solved and functionalities implemented, there
+ are still some that remained to be done.
+ Among them are the execution of the evaluation plans, functionalities to
+ support recollection of data from the interactions and even the implementation
+ of the Marcopolo scenario of interaction proposed in this document.
+\end_layout
+
+\begin_layout Standard
+The implementation of the Marcopolo scenario was heavily hindered by the
+ development of a sound localization algorithm with the enough affidability
+ to provide even an acceptable performance.
+ The legacy implementation received was thought to fail because of the microphon
+es, however, the information extracted from the sound signals to be used
+ by this algorithm was too little (only single amplitude measurements that
+ are too susceptible to noise) to expect a robust enough localization of
+ the source sound.
+ To improve the algorithm, it was taken the more sensible option available
+ to achieve the desire precision in the sound source localization that was
+ that of using an Interaural Time Difference approach that bases the estimation
+ of the position in the delay between the signals measured by the triple
+ of microphones.
+ 
+\end_layout
+
+\begin_layout Standard
+However, to implement this solution three main problems with the computational
+ platform (Arduino) were encountered during its implementation: memory,
+ computational power and ADC sampling rate.
+ The maximum sampling rate possible with the Arduino Mega in Teo2 was 50
+ kHz only sampling one signal, in order to sample the three microphones
+ the sample rate would reduce to ~16kHz that would be too little for the
+ bandwith of the sound signals, thus, producing aliasing that would affect
+ the reliability of the computations.
+ Moreover, the time step between samples of the signal of 1/16kHz would
+ not provide the resolution required to measure the delay between the signals
+ with enough accuracy.
+ On the other hand, the memory in the Arduino Mega (8MB) was not enough
+ to store more than ~64ms of each signal (sampled at 16kHz) and for it was
+ reduced the amount of information available to run the algorithm.
+ Finally, the computation of the delay for this little sample resulted in
+ completely erroneous results that took ~3sec to process for just 64ms of
+ data.
+ The possible efficient computations through the use of the FFT (Fast Fourier
+ Transform) was not possible because the memory was not enough to even execute
+ it, however, the floating point arithmetic in the Arduino Mega microcontroller
+ is slow, so it was not guaranteed an improvement in processing time.
+ Finally, the possibility to realize this signal processing in the external
+ PC was descarted because with Bluetooth module as the only communication
+ link the data rate was not enough to provide a real-time algorithm.
+\end_layout
+
+\begin_layout Standard
+Given the lack of a sound localization algorithm, the Marcopolo scenario
+ was decided to be left yet implemented.
+ Even though, the dynamic can be simulated using the manual control provided
+ by the 
+\begin_inset Quotes fld
 \end_inset
 
-A big issue has occured during the development of the sound localization
- code.
- Arduino can sample at 50kHz, that means 50kB/s, that force us to sample
- for 100ms because of the saturation of the memory.
- Moreover, sampling from 3 microphones simultaneously means to divide the
- frequency (50kHz/3=16kHz), which could produce aliasing for the Nyquist
- theorem (if the nput signal has a frequency of more than 8kHz).
-\begin_inset Newline newline
+Talk2Teo
+\begin_inset Quotes frd
 \end_inset
 
-Furthemore, sampling only 100ms don't let to understand which of the 3 signal
- come first (the algorithm uses the 
+ functionalities, the autonomous proposed behavior was not possible within
+ the time frame of the present project.
+\end_layout
+
+\begin_layout Standard
+By the end, it was proposed to implement a logger to collect data during
+ the interaction situations with Teo2 containing information of the behaviors
+ executed, some sensors measurement and the time to provide support for
+ the evaluation activities.
+ However, due to the time contraints, it was not implemented.
+ 
 \end_layout
 
 \begin_layout Section
@@ -102,27 +163,27 @@ Future directions
 \end_layout
 
 \begin_layout Standard
-Our solution is still far from its potential.
-\begin_inset Newline newline
-\end_inset
+The solution proposed in this project is still far from its full potential.
+\end_layout
 
-Arduino could be replaced with a Raspberry Pi 3 or an Intel Edison, which
- would allow Teo to easely compute digital signal processing, in order to
- deal with 
-\series bold
-voice recognition
-\series default
- and 
-\series bold
-face detection
-\series default
-.
-\begin_inset Newline newline
-\end_inset
+\begin_layout Standard
+One of the main things that could be done in future works with Teo2 would
+ be to complement the computational architecture, that is, distribute the
+ tasks of collecting data from sensors and control of actuators to the Arduino's
+ microcontroller and add a mini PC or Raspberry Pi that could help in handling
+ more complex algorithms to enhance Teo's intelligence.
+ For instance,
+\end_layout
 
-Finally, Teo could have enough resources in order to have an artificial
- intelligence, which would allow Teo to be a companion in the children life,
- not 
+\begin_layout Itemize
+Easily compute digital signal processing algorithm, in order to deal with
+ voice recognition, face detection and emotion detection.
+\end_layout
+
+\begin_layout Itemize
+Provide enough resources to have an artificial intelligence, which would
+ allow Teo to be a more natural play companion in the children lives, not
+ 
 \begin_inset Quotes fld
 \end_inset
 
@@ -131,12 +192,43 @@ only
 \end_inset
 
  a tool used by a therapist.
-\begin_inset Newline newline
+\end_layout
+
+\begin_layout Itemize
+Centralize the network and processing in Teo, so the computer is not as
+ essential as in the current state.
+\end_layout
+
+\begin_layout Itemize
+For the scenario 
+\begin_inset Quotes fld
 \end_inset
 
+Talk2Teo
+\begin_inset Quotes frd
+\end_inset
+
+, a tablet application could be implemented in order to substitute the joypad
+ to control Teo, so to provide a possible better and more adaptive user
+ experience for the therapists.
+\end_layout
+
+\begin_layout Itemize
+Provide Teo with a broadcasting device to project information in a monitor
+ in the room where the therapy sessions are developed.
+\end_layout
+
+\begin_layout Standard
 The synthesized voice could be replaced with a real one in order to get
  better engagement of the children (even if a synthesized voice allow to
  modify the sentences more easly).
+\begin_inset Newline newline
+\end_inset
+
+Teo2 model leaves space to many possibilities in terms of usage and advantages
+ within the therapy.
+ Several new games and interaction can be designed using Teo2, thanks to
+ its versatility.
 \end_layout
 
 \end_body
