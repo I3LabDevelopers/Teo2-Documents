@@ -86,11 +86,11 @@ Talk2Teo
 \begin_inset Quotes frd
 \end_inset
 
- is the one implemented so far, henceforth, the one being evaluated as a
+ is the one implemented so far, henceforth, the one to be evaluated as a
  prototype.
  However, it is also presented the final product goal: the full equipped
  version of Teo is described and the evaluation plans to valuate such product
- is also described in detail.
+ is also presented in detail.
 \end_layout
 
 \begin_layout Subsection
@@ -111,7 +111,20 @@ Evaluating processes
 
 \begin_layout Standard
 As the system described consist of different parts is it necessary to plan
- different evaluating processes: 
+ different evaluating processes.
+ 
+\end_layout
+
+\begin_layout Standard
+In the Talk2Teo scenario is important to evaluate the quality of the interfaces
+ in the PC to handle setup configuration of the control application for
+ Teo2.
+ Henceforth, it is proposed a task-driven evaluation in which the therapist
+ would be guided to perform some basic activities using the Teo2Control
+ and Teo2Settings applications.
+ In Table 4.1 is summarized a first version of the task to be realized by
+ the therapist using the computer applications and the sketch of a questionnaire
+ that will be used to retrieve data on the user experience.
 \end_layout
 
 \begin_layout Standard
@@ -453,6 +466,16 @@ Evaluation plan of computer application
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+Moreover, the robot control system will be evaluated in a task-driven manner,
+ so the therapist will try out the possibilities put in disposition for
+ her through the use of the joypad such as movement, Teo's mood selection
+ and phrases.
+ In Table 4.2 a set of tasks to be realized with Teo2 are presented and a
+ sketch of the questionnaire to collect data regarding the experience and
+ opinion is also presented.
 \end_layout
 
 \begin_layout Standard
@@ -930,6 +953,16 @@ Evaluation plan of robot control system
 \end_layout
 
 \begin_layout Standard
+Also, after setting up the basic functionalities of Teo's controller and
+ starting up the control application and experimenting with the functionalities
+ of Teo, the therapist would be asked to be the inspector of the results
+ obtained in the implementation of the Talk2Teo prototype and, thus, through
+ an interview it will be retrieved the opinion of the therapist about the
+ features of included in Teo2.
+ In Table 4.3, presents a list of the features to be evaluated.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float table
 placement H
 wide false
@@ -1286,26 +1319,27 @@ Final product
 
 \begin_layout Standard
 This final product consists of twofold functional robot that will serves
- both to the therapists and the child For the therapists, we propose a Teo
- that is remotely controlled, just at the reach of their hands, so they
+ both to the therapists and the children.
+ For the therapists, a Teo that is remotely controlled is proposed, so they
  can trigger emotional behaviors as rewards or a demonstration for cause-effect
- relationship, we want the therapist to make Teo speak so it can prompt
- the child to follow the activity, we want to be able of moving it around
+ relationship, it will be possible for the therapist to make Teo speak so
+ it can prompt the child to follow the activity, to make it move around
  so it can be used as a guide for the kid around the room.
- We want Teo to be versatile for the therapist and the dynamic she sees
- fit to develop with the child.
- Finally, we want Teo to gather data about the child through its sensors,
- in order to give the therapist useful structured informations.
+ Teo2 will be versatile for the therapist and the dynamic she sees fit to
+ develop with the child.
+ Finally, it is envisioned for Teo to gather data about the child through
+ its sensors, in order to give the therapist useful structured informations.
 \begin_inset Newline newline
 \end_inset
 
-For the children, we propose a Teo that has set of behaviors that will make
- it a likable companion for a child.
- We want it to react to hug, hits and caresses, to show interest and autonomousl
-y motivate the continuation of story-telling activities, to have a set of
- games to play with the children, to call out for the child when Teo can’t
- find him near.
- We want to create a Teo that can be a friend to the child.
+For the children, Teo will have a set of behaviors that will make it a likable
+ companion for them.
+ It shoudl be able to react to hug, hits and caresses, to show interest
+ and autonomously motivate the continuation of story-telling activities,
+ to have a set of games to play with the children, to call out for the child
+ when Teo can’t find him near.
+ Possibly, extend the capabilities of Teo to include advance emotional detection
+ to provide more emotionally consistent behaviors.
 \end_layout
 
 \begin_layout Subsubsection

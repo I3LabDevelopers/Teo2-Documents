@@ -84,25 +84,29 @@ emotional
 \begin_inset Quotes frd
 \end_inset
 
- behavior that can produce better relationships with people.
- Moreover, it is interesting to explore the effect of these emotionally
- enhanced robotic companions with children that are subject of Neurodevelopmenta
-l Disorders (NDD) and the value the robots can bring within the therapy
- sessions that are conducted with these children.
+ behavior that can help to form better relationships with people.
+ Moreover, it is interesting to explore the effect of these emotionally-enhanced
+ robotic companions with children that are subject of Neurodevelopmental
+ Disorders (NDD) and the value the robots can bring within the therapy sessions
+ that are conducted with these children.
 \end_layout
 
 \begin_layout Standard
-The goal of this project is to re-engineer and extend the existing version
- of Teo 2
+The goal of this project is, hence, to re-engineer and extend the existing
+ version of Teo 2
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Teo2"
 
 \end_inset
 
- with a set of behaviors and functionalities that can make it useful for
- the therapist to include the robot as part of their therapy and as a companion
- toy that the children can feel comfortable with.
+, the emotional evolution of the Teo that was result of the KROG Project.
+ To exploit the twofold functionality of Teo, that of a playful companion
+ for the children and that of a tool for the therapist, a set of behavior
+ and functionalities were added to render this robot more emotionally consisting
+ with the environment stimili and the interaction with the children.
+ Also a set of functions were designed to put in the therapists' hands the
+ control necessary for them to include Teo in their therapy sessions.
 \end_layout
 
 \begin_layout Standard

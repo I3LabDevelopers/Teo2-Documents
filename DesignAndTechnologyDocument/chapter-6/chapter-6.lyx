@@ -85,8 +85,9 @@ During the development of this project many constraints and limitations
  Even though many issues were solved and functionalities implemented, there
  are still some that remained to be done.
  Among them are the execution of the evaluation plans, functionalities to
- support recollection of data from the interactions and even the implementation
- of the Marcopolo scenario of interaction proposed in this document.
+ support recollection of data from the interactions with Teo and even the
+ implementation of the Marcopolo scenario of interaction proposed in this
+ document.
 \end_layout
 
 \begin_layout Standard
@@ -102,14 +103,12 @@ Talk2Teo
 \end_inset
 
  functionalities, the autonomous proposed behavior was not possible within
- the time frame of the present project.
-\end_layout
-
-\begin_layout Standard
-Also, among the automatic behaviors proposed, the ones corresponding to
+ the time frame of the present project given the reasons explained in Chapter
+ 5.
+ Also, among the automatic behaviors proposed, the ones corresponding to
  the pressure sensors in Teo's body were not implemented due to the lack
  of a reliable enough processing of the data collected from these sensors
- and lack of sufficient time to implement it.
+ and lack of sufficient time to finish its implementation.
 \end_layout
 
 \begin_layout Standard
@@ -117,8 +116,9 @@ By the end, it was proposed to implement a logger to collect data during
  the interaction situations with Teo2 containing information of the behaviors
  executed, some sensors measurement and the time to provide support for
  the evaluation activities.
- However, due to the time contraints, it was not implemented.
- 
+ However, due to the time contraints, it was not implemented; even though,
+ the current state of the implementation would allow a simple enough extension
+ to support this functionality.
 \end_layout
 
 \begin_layout Section

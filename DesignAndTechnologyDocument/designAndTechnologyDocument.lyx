@@ -454,6 +454,30 @@ thechapter.
 \end_layout
 
 \begin_layout Chapter*
+Abstract
+\end_layout
+
+\begin_layout Standard
+The present project is based on the enhancement of the re-engineered version
+ of Teo, Teo2: the emotional Teo.
+ As a robot designed to interact with children with intellectual disabilities,
+ the interactions henceforth designed part from these particular needs both
+ of the children and the therapists.
+ The problem attended was the fact that the therapy sessions –done to help
+ these children to learn the basic abilities that they have trouble with–
+ are in need of technological enhancements that can make possible great
+ improvement in these children.
+ Teo2 is then set to be both the tool for the therapist to teach children
+ how to relate with others and the playful companion that the children can
+ interact with in a less confusing manner than with their human peers.
+ The basic functionalities to achieve the solution of these problems were
+ implemented, introducing the basic elements that enable the control of
+ Teo2 and the basic intelligence to handle behaviors that can let Teo be
+ an entity to interact with.
+ 
+\end_layout
+
+\begin_layout Chapter*
 Introduction
 \begin_inset CommandInset label
 LatexCommand label
