@@ -1582,17 +1582,75 @@ Manual behaviours
 \end_layout
 
 \begin_layout Enumerate
-Move/Rotate
+Controlled Move/Rotate
 \end_layout
 
 \begin_layout Enumerate
-Speak (predefined phrases)
+Pre-defined phrases triggering: allows to played phrases such as 
+\begin_inset Quotes fld
+\end_inset
+
+Do you want to play?
+\begin_inset Quotes frd
+\end_inset
+
+, 
+\begin_inset Quotes fld
+\end_inset
+
+Hello!
+\begin_inset Quotes frd
+\end_inset
+
+, 
+\begin_inset Quotes fld
+\end_inset
+
+Great!
+\begin_inset Quotes frd
+\end_inset
+
+, 
+\begin_inset Quotes fld
+\end_inset
+
+Well done!
+\begin_inset Quotes frd
+\end_inset
+
+, etc.
 \end_layout
 
 \begin_layout Enumerate
-Select mood (happy, sad, angry, scared)
+Mood selection/triggering (happy, sad, angry, scared)
 \end_layout
 
+\begin_deeper
+\begin_layout Standard
+Everytime a mood is selected, an animation follows.
+ All of the animation change the displayed face is changed and a consisting
+ sound – with a voice pitch depending on the mood– is played.
+ Followed by the movement described bellow.
+\end_layout
+
+\begin_layout Itemize
+Happy: Teo rotates 30° clockwise, 60° counter-clockwise and 30° clockwise.
+ 
+\end_layout
+
+\begin_layout Itemize
+Sad: Teo rotates 180° clockwise
+\end_layout
+
+\begin_layout Itemize
+Scared: Teo goes back 40cm.
+\end_layout
+
+\begin_layout Itemize
+Angry: Teo moves forward 20cm.
+\end_layout
+
+\end_deeper
 \begin_layout Enumerate
 Non-linguistic utterances
 \end_layout
@@ -1607,46 +1665,8 @@ low profile: nod, gasp, sigh
 \end_layout
 
 \end_deeper
-\begin_layout Standard
-
-\shape italic
-\bar under
-Observation#1
-\bar default
-: everytime a mood is selected, an animation follows.
-\end_layout
-
-\begin_layout Itemize
-
-\shape italic
-Happy: Teo rotates 30° clockwise, 60° counter-clockwise and 30° clockwise
-\end_layout
-
-\begin_layout Itemize
-
-\shape italic
-Sad: Teo rotates 180° clockwise
-\end_layout
-
-\begin_layout Itemize
-
-\shape italic
-Scared: Teo goes back 40cm and vibrates for 3 sec
-\end_layout
-
-\begin_layout Itemize
-
-\shape italic
-Angry: Teo moves forward 20cm, vibrates for 0,5 sec and goes back 20cm
-\end_layout
-
-\begin_layout Standard
-
-\shape italic
-\bar under
-Observation#2
-\bar default
-: the voice pitch depends on the mood
+\begin_layout Enumerate
+Idle state selection: in this state Teo simulates to be sleeping.
 \end_layout
 
 \begin_layout Subparagraph
@@ -1661,7 +1681,7 @@ Face animation
 
 \begin_deeper
 \begin_layout Standard
-Every three seconds a face animation, of the current mood, occurs.
+Every three seconds a face animation, of the current selected mood, occurs.
 \end_layout
 
 \end_deeper
@@ -1673,8 +1693,8 @@ Breathing
 
 \begin_deeper
 \begin_layout Standard
-A fading effect on the led strips simulates the breathing –whose frequence
- depends on the mood.
+A fading effect on the led strips simulates the breathing –with a frequence
+ that depends on the mood.
 \end_layout
 
 \end_deeper
@@ -1686,7 +1706,7 @@ Wake up
 
 \begin_deeper
 \begin_layout Standard
-In the idle state Teo is sleeping, and it is snoring.
+In the idle state, Teo is sleeping and snoring.
  Teo has to be awakened by the child which has to talk to it or can be awaken
  by the therapist through the joypad.
  Once woken up, Teo says 
@@ -1721,7 +1741,7 @@ Where are you?
 
 \begin_deeper
 \begin_layout Standard
-When the child goes away from Teo, that is when the child is not perceived
+When the child goes away from Teo, that is, when the child is not perceived
  close to Teo –closer that the personal zone (< 2m)–, Teo gets sad saying
  
 \begin_inset Quotes fld
@@ -1732,12 +1752,14 @@ Where are you?
 \end_inset
 
 .
- It rotates a little as if it were looking for the child.
- When the children comes back, Teo turns happy saying 
+ It rotates 60° both to the left and to the right, as if it were looking
+ for the child.
+ When the child comes back –i.e.
+ comes back to the personal zone–, Teo turns happy saying 
 \begin_inset Quotes fld
 \end_inset
 
-Welcome back!
+Do you want to play?
 \begin_inset Quotes frd
 \end_inset
 
@@ -1753,9 +1775,10 @@ Prompts
 
 \begin_deeper
 \begin_layout Standard
-When Teo has random time between 30 to 50 seconds of inactivity (no other
- behavior, either manual or automatic, has been executed), Teo makes a low
- profile non-linguistic utterance or a random phrase.
+When Teo has a random time –between 30 to 50 seconds– of inactivity (no
+ other behavior, either manual or automatic, has been executed), Teo makes
+ a low profile non-linguistic utterance or a random phrase and rotates 30°,
+ both to the left and to the right.
  This with the intention to keep the robot active and trying to engage the
  children in some kind of interaction.
 \end_layout

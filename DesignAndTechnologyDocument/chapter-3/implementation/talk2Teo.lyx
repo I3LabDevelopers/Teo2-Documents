@@ -656,19 +656,19 @@ Choose behavior
 \begin_inset Quotes erd
 \end_inset
 
- state that will check the conditions for execution and decide whether is
- possible, if so it will simply set a function pointer and realize the initializ
-ation process for the execution of the behavior.
+ state will check the conditions for execution and decide whether is possible,
+ if so it will, simply, set a function pointer and realize the initialization
+ process for the execution of the behavior.
  The second one will be a machine state that will contain the logic to handle
- the actions that compose the behaviors.
+ the actions that compose the behavior.
 \end_layout
 
 \begin_layout Standard
 Similarly, for the manual commands to add a manual command also two functions
  are needed.
  The first one, being a handler that is the callback for the received command,
- that will set a function pointer to the logic of execution and do any initializ
-ation that is necessary.
+ will set a function pointer to the logic of execution and do any initialization
+ that is necessary.
  The second one will be the function containing the logic and the actions
  to execute.
 \end_layout

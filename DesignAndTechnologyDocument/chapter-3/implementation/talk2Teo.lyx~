@@ -640,6 +640,39 @@ State machine of Talk2Teo logic
 
 \end_layout
 
+\begin_layout Standard
+This firmware for Talk2Teo was implemented in such a way to allow for an
+ easy insertion into a more complex logic, mainly, to integrate the Talk2Teo
+ functionalities with future ones.
+ Furthermore, for extending the manual commands and the automatic behaviors,
+ also the state machine structure was exploited.
+ Henceforth, for implementing new behaviors is simply a matter to implement
+ two functions.
+ The first one that would be called in the 
+\begin_inset Quotes eld
+\end_inset
+
+Choose behavior
+\begin_inset Quotes erd
+\end_inset
+
+ state will check the conditions for execution and decide whether is possible,
+ if so it will, simply, set a function pointer and realize the initialization
+ process for the execution of the behavior.
+ The second one will be a machine state that will contain the logic to handle
+ the actions that compose the behavior.
+\end_layout
+
+\begin_layout Standard
+Similarly, for the manual commands to add a manual command also two functions
+ are needed.
+ The first one, being a handler that is the callback for the received command,
+ that will set a function pointer to the logic of execution and do any initializ
+ation that is necessary.
+ The second one will be the function containing the logic and the actions
+ to execute.
+\end_layout
+
 \begin_layout Paragraph
 Communication protocol
 \end_layout
