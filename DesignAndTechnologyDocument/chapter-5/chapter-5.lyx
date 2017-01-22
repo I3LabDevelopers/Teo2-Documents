@@ -74,18 +74,165 @@
 \begin_body
 
 \begin_layout Standard
-The main critical aspect of our work is related to the time: the design,
- the software development and the documents creation have taken ~100 hours
- from each of us.
- Besides this, it has been one the most challenging project ever made in
- our students career, because of its multidisciplinarity.
- It is required to manage a mixture of design, creativity, psychology, computer
- science and electronics.
+The work realize with Teo2 was a challenge from its beginning, since designing
+ possible interaction scenarios with children and a robot to the fact of
+ actually working on the implementation of such designs.
+ The natural multidisciplinarity of the project allowed the exploration
+ of ideas corresponding to fields varying from human-robot interaction,
+ psichology, robotics, electronics and computer science.
+ And as any challange, it brought learning and difficulties that finally
+ lead to the results stated in the present document.
+ In the present chapter the challenges affronted are stated and the results
+ accomplished are discussed.
+\end_layout
+
+\begin_layout Section
+Platform-related difficulties
+\end_layout
+
+\begin_layout Standard
+The platform that was received to work on the interactions scenarios was
+ far from fully functional, that is, the subsystems had problems ranging
+ from lack of drivers implementation to electronics issues.
+ Henceforth, a significant amount of time was taken to design and develop
+ solutions to turn the systems functional for the scenarios development.
+ However, many problems were solved and/or alleviated to allow for the implement
+ation of the Talk2Teo scenario.
+\end_layout
+
+\begin_layout Standard
+Among the problems solved where many false-contacts throughout the electronics
+ that made unreliable the reading of sensors as the sonar and the Sharp
+ IR, the remapping of the motors pins that did not allow for the appropiate
+ control of the speed and, hence, there was no control over the direction
+ and speed of Teo; implementation of a position controller to allow for
+ automatic behaviors being able to change its orientation and position in
+ the space according to the behavior's logic, introduction of the PC in
+ the control loop of Teo to allow the handling of diverse input and output
+ controlling signals –joypad controller, audio speaker and Teo control and
+ setup– and evaluation of the power consumption of the system.
+\end_layout
+
+\begin_layout Standard
+In other account, the work to be done in the platform was divided between
+ to teams, not all the subsystems were checked and, hence, the implementation
+ of behaviors depending on the force sensors (FSR: Force Sensitive Resistor)
+ as reaction to hugs, hits and caresses could not be implemented in the
+ allotted time.
+ 
+\end_layout
+
+\begin_layout Standard
+Finally, one of the bigger difficulties is presented in the following subsection
+, as it was the more complex problem and it led to leave unimplemented one
+ of the scenarios proposed.
+\end_layout
+
+\begin_layout Subsection
+Marcopolo scenarios implementation
+\end_layout
+
+\begin_layout Standard
+To provide Teo with semi-autonomous ways to interact with the children the
+ Marcopolo scenarios were proposed, that is, the introduction of autonomous
+ gaming interaction aimed to provide mechanisms for the child and Teo shared
+ a structured activity that would promote the comfortabily and the getting-accos
+tumed phase.
+ However, the implementation of these scenarios were strongly delayed by
+ technological limitations of the platform designed to be Teo2.
+ Their realization was heavily hindered by the development of a sound localizati
+on algorithm with the enough accuracy to provide even an acceptable performance
+ of the game.
+ The legacy implementation received was thought to fail because of the microphon
+es, however, the information extracted from the sound signals to be used
+ by this algorithm was too little (only a trio of single-point amplitude
+ measurements that were too susceptible to noise) to expect a robust enough
+ localization of the source sound.
+ To improve the algorithm, it was taken the more sensible option available
+ to achieve the desire precision in the sound source localization; that
+ was that of using an Interaural Time Difference approach that bases the
+ estimation of the position in the delay between the signals measured by
+ the trio of microphones.
+ 
 \begin_inset Newline newline
 \end_inset
 
-Furthermore, Teo has an amazing advantage with respect to the other robots
- in the market because it is cheap.
+Nevertheless, to implement this solution, three main problems with the computati
+onal platform (Arduino) were encountered during its implementation: memory,
+ computational power and ADC sampling rate.
+ The maximum sampling rate possible with the Arduino Mega in Teo2 was 50kHz
+ only sampling one signal, in order to sample the three microphones the
+ sample rate would reduce to ~16kHz that would be too little for the bandwith
+ of the sound signals, thus, producing aliasing that would affect the reliabilit
+y of the computations.
+ Moreover, the time step between samples of the signal of 1/16kHz would
+ not provide the resolution required to measure the delay between the signals
+ with enough accuracy –contrained by the distance between the microphones,
+ which determine the delay between the signals.
+ On the other hand, the memory in the Arduino Mega (8MB) was not enough
+ to store more than ~64ms of each signal (sampled at 16kHz), thus it cause
+ the reduction of the amount of information available to run the algorithm.
+ Finally, the computation of the delay for this little sample resulted in
+ completely erroneous results that took ~3sec to process for just 64ms of
+ data.
+ The possible efficient computations through the use of the FFT (Fast Fourier
+ Transform) were not possible because the memory was not enough to even
+ execute it, however, the floating point arithmetic in the Arduino Mega
+ microcontroller is slow, so it was not guaranteed an improvement in processing
+ time.
+ Finally, the possibility to realize this signal processing in the external
+ PC was descarted because with the Bluetooth module as the only communication
+ link, the data rate available was not enough to allow a real-time algorithm.
+\end_layout
+
+\begin_layout Section
+Results and Conclusions
+\end_layout
+
+\begin_layout Standard
+The work done to try and implement the Talk2Teo and Marcopolo scenarios,
+ as mentioned above, led to realize many correcting actions on the platform,
+ redesign and implementation of old and new features that make the platform
+ of Teo2 more easily handled and can lead to the initiative of development
+ of other projects to create new and better interactions and provide improvement
+s to the platform itself.
+ 
+\end_layout
+
+\begin_layout Standard
+Talk2Teo, the scenario implemented to completion, represents the solution
+ proposed to enhance Teo with a mechanism that puts in the hands of the
+ therapist a total control of the functionalities that are part of this
+ robot.
+ This kind of control should allow Teo to be a useful and desirable tool
+ for the therapist, that is, the solution developed looks to satisfy the
+ need of the therapist to have a technological tool that allows them to
+ provide to the children rewards, reinforcement, guidance and examples in
+ a manner that the children are comfortable with a limited and controlled
+ stimuli production –as it happens when Teo is used.
+ Moreover, Teo was equipped with the ability to use its small model of the
+ environment in a way to generate reactions and behaviors that can make
+ him likable and interactive to the children.
+ Even the voice and the design of the facial expressions where re-done to
+ ensure a more easy way for these special children to learn to recognize
+ Teo's emotions and to understand the actions that triggered them.
+\end_layout
+
+\begin_layout Standard
+In this way, this first solution approaches to solve the comprehensive situation
+ in which Teo satisfy the twofold goal to be the technological tool that
+ therapists can use during its therapy sessions and that the way Teo reacts,
+ behaves and interact can successfully allow the children to like it to
+ be used in their sessions; a tool that the therapist wants to use is incomplete
+ if the children simply do not want to have them used.
+ And even though, the prototype here presented is yet to be evaluated, the
+ implementation done ensures full scalability and easy redesign of the features;
+ thus, providing a platform that can evolve positively and in an efficient
+ manner with the feedback from its users and stakeholders.
+ All in all, the prototype here developed has the characteristics neccesary
+ to satisfy the needs of its users while fully extendable and capable to
+ be adapted and included in a future more complex artificial intelligence
+ for this robotic companion for the NDD children.
 \end_layout
 
 \end_body

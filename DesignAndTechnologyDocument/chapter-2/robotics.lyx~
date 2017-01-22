@@ -73,9 +73,9 @@
 \begin_body
 
 \begin_layout Standard
-The use of robots has been proved successful in many cases of subjects with
+The use of robots has been proven successful in many cases of subjects with
  different neurodevelopmental disorders, e.g., intellectual disability, attention-
-decit, hyperactivity disorder (ADHD), or Autistic Spectrum Disorder (ASD)
+deficit, hyperactivity disorder (ADHD), Autistic Spectrum Disorder (ASD)
 \begin_inset CommandInset citation
 LatexCommand cite
 key "WhyRobots"
@@ -89,11 +89,7 @@ key "SocialRobots"
 
 \end_inset
 
-.
-\begin_inset Newline newline
-\end_inset
-
-The use of social robots to provide alternative, “virtual” forms of Pet
+.The use of social robots to provide alternative, “virtual” forms of Pet
  Therapy has been explored in research since late nineties.
 \begin_inset Newline newline
 \end_inset
@@ -297,7 +293,7 @@ key "NAO"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -305,8 +301,8 @@ status collapsed
 \shape italic
 \begin_inset Graphics
 	filename ../img/askNao.jpg
-	lyxscale 70
-	width 70col%
+	lyxscale 50
+	width 50col%
 
 \end_inset
 

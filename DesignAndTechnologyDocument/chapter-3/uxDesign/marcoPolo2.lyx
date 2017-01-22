@@ -76,20 +76,27 @@
 
 \begin_body
 
-\begin_layout Subparagraph
-Input
+\begin_layout Standard
+As an extension of the previous version, the context of use is also in a
+ therapy session in a sufficiently large room to be shared by the child
+ and Teo.
+ However, the room must also be equipped with some technology to support
+ this game: monitor/projector and RFID-tagged objects.
 \end_layout
 
 \begin_layout Standard
-The therapist selects 
-\shape italic
-Teo2Control
-\shape default
- app and chooses 
-\shape italic
-Marco-Polo game - version 2
-\shape default
-.
+The basic premise of the game is based on the use of sound guidance that
+ is core of the Marcopolo game.
+ However, the target to be reach by Teo is different: Teo must be guided
+ by the child to pass through different positions in the room following
+ a determined sequence.
+\end_layout
+
+\begin_layout Standard
+For this version, the participation of the therapist will be kept as before,
+ being an observer of the game and control Teo, in case it is necessary.
+ Also, provide the reinforcement and guidance when the child needs it to
+ start/continue with the game.
 \end_layout
 
 \begin_layout Subparagraph
@@ -98,28 +105,93 @@ Goal
 
 \begin_layout Standard
 The goal of the game is to help the child to associate the sequence presented
- to a spatial relation with the physical checkpoints.
+ to a spatial relation with physical objects and positions in space, in
+ addition to generating a dynamic in which the interaction between the child
+ and Teo can become more natural and comfortable.
 \end_layout
 
 \begin_layout Subparagraph
-Rules
+Interface
 \end_layout
 
 \begin_layout Standard
-The child and Teo share sufficiently large space to move around.
+The therapist selects through the computer application 
+\shape italic
+
+\begin_inset Quotes fld
+\end_inset
+
+Teo2Control
+\begin_inset Quotes frd
+\end_inset
+
+
+\shape default
+ and chooses 
+\shape italic
+
+\begin_inset Quotes fld
+\end_inset
+
+Marco-Polo game - version 2
+\shape default
+
+\begin_inset Quotes frd
+\end_inset
+
+, to start its execution.
+\end_layout
+
+\begin_layout Subparagraph
+Dynamic of the game
+\end_layout
+
+\begin_layout Standard
+Teo and the child, as before, need to share a sufficiently large space to
+ move around.
+ With a 
+\begin_inset Quotes fld
+\end_inset
+
+blindfolded
+\begin_inset Quotes frd
+\end_inset
+
+ Teo, the game starts and Teo begins explaining to the child the dynamic
+ of the game: Teo narrates that the child has an important task to realize
+ in which he has to try to guide it (Teo) through a series of points where
+ he must go.
+ But as Teo cannot see, must be done with the voice.
+ Teo prompts the child to answer out loud 
+\begin_inset Quotes fld
+\end_inset
+
+Teo, here!
+\begin_inset Quotes frd
+\end_inset
+
+ whenever it asks 
+\begin_inset Quotes fld
+\end_inset
+
+Where are you?
+\begin_inset Quotes frd
+\end_inset
+
+.
 \begin_inset Newline newline
 \end_inset
 
-The game starts with a ’blindfolded’ Teo, which explains the child the dynamic
- of the game.
+A monitor/projector will show a sequence of checkpoints that must be followed,
+ identified, for instances, with colored circles distributed around the
+ room.
+ After the explanation and the sequence to follow revealed, the game can
+ get started.
+ 
 \begin_inset Newline newline
 \end_inset
 
-A projector will show on the floor a sequence of images (checkpoints).
-\begin_inset Newline newline
-\end_inset
-
-The child must move to the checkpoint and call 
+The child must move to the corresponding checkpoint and call 
 \begin_inset Quotes fld
 \end_inset
 
@@ -227,29 +299,38 @@ name "fig:image-1-4-2-3-2"
 
 Whenever Teo arrives to a correct checkpoint, congratulates the child happily
  and prompts him to keep doing a great job.
+ When, instead, Teo arrives to an incorrect checkpoint it prompts the child
+ to verify if he is where he should be.
+ 
 \begin_inset Newline newline
 \end_inset
 
-The game ends when Teo reaches the final checkpoint.
- 
+The game ends when Teo reaches the final checkpoint in which Teo happily
+ praise the child with a combination of lighting, faces, sound and images
+ displayed in the monitor/projector.
 \end_layout
 
 \begin_layout Subparagraph
-Feasibility
+Technological Feasibility and requirements.
+\end_layout
+
+\begin_layout Standard
+As this game is an extension of the previous version of Marcopolo, then,
+ it depends in the same technological requirements.
+ The additional constraints and requirements are the ones stated below.
 \end_layout
 
 \begin_layout Itemize
-this is an extension of the 1st version of Marco-Polo game, so its implementatio
-n depends on the completion of the latter one
+In order to allow Teo to be able to recognize the correctness of its position,
+ the checkpoints must be identified.
+ For instance, using RFID is possible to do this and, therefore, and RFID
+ tag reader must added to the hardware infrastructure of Teo.
+ 
 \end_layout
 
 \begin_layout Itemize
-it is necessary to install a RFID reader on Teo in order to recognize the
- checkpoints
-\end_layout
-
-\begin_layout Itemize
-it is necessary to have a projector in the room
+A projector and/or a monitor big enough must be available in the room to
+ allow the display of information important for the development of the game.
 \end_layout
 
 \end_body

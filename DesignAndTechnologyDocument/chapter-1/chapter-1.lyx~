@@ -78,6 +78,11 @@ Users and needs
 \end_layout
 
 \begin_layout Standard
+The Table 1.1 summarizes the primary users of the robot Teo2 and their principal
+ needs addressed by the interaction scenarios presented in Chapter 3.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float table
 placement H
 wide false
@@ -171,7 +176,7 @@ School children/NDD-affected children
 \begin_inset Text
 
 \begin_layout Plain Layout
-- Convey emotional rewards to the children 
+- Receive emotional rewards 
 \end_layout
 
 \end_inset
@@ -231,7 +236,7 @@ Special Teachers/Therapists
 \begin_inset Text
 
 \begin_layout Plain Layout
-introducing robotics in the traditional therapy
+introducing new technologies in therapy
 \end_layout
 
 \end_inset
@@ -282,21 +287,45 @@ Primary users and their needs
 Goals of the system
 \end_layout
 
-\begin_layout Itemize
-Develop empathetic behaviors
+\begin_layout Standard
+The following are the goals to accomplish with the design of new interactions
+ with Teo2.
 \end_layout
 
 \begin_layout Itemize
-Include socially correct spatial management
+To help the NDD children to develop empathetic behaviors,
 \end_layout
 
 \begin_layout Itemize
-Produce emotional reactions that make Teo 2 more emotionally natural than
- Teo 1 and the first version of Teo 2
+To take advantage of socially correct spatial management,
+\end_layout
+
+\begin_layout Itemize
+To produce emotional reactions that make Teo 2 more emotionally natural
+ than Teo 1
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Teo1"
+
+\end_inset
+
+ and the first version of Teo 2 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Teo2"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Section
 Requirements of the system
+\end_layout
+
+\begin_layout Standard
+The requirements of the system that are entailed by the goals and need are
+ presented as functional and non-functional.
 \end_layout
 
 \begin_layout Subsection
@@ -304,11 +333,11 @@ Functional requirements
 \end_layout
 
 \begin_layout Itemize
-The user has to be able to talk with Teo
+The user should be able to talk with Teo
 \end_layout
 
 \begin_layout Itemize
-The system has to be empathetic towards the users
+The system should use empathetic criteria to interact with the users
 \end_layout
 
 \begin_layout Subsection

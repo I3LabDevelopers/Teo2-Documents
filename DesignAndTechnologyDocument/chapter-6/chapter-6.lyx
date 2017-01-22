@@ -78,35 +78,47 @@ What was left
 \end_layout
 
 \begin_layout Standard
-For the lack of time, unfortunaately we hadn't implemented a logger of data
- (about distance and touch) collected by the Teo sensors.
-\begin_inset Newline newline
+During the development of this project many constraints and limitations
+ were encountered.
+ The principal ones were time and the state of the hardware infrastructure
+ received.
+ Even though many issues were solved and functionalities implemented, there
+ are still some that remained to be done.
+ Among them are the execution of the evaluation plans, functionalities to
+ support recollection of data from the interactions with Teo and even the
+ implementation of the Marcopolo scenario of interaction proposed in this
+ document.
+\end_layout
+
+\begin_layout Standard
+Given the unsuccessful implementation sound localization algorithm, the
+ Marcopolo scenario was decided to be left yet implemented.
+ Even though, the dynamic can be simulated using the manual control provided
+ by the 
+\begin_inset Quotes fld
 \end_inset
 
-A big issue has occured during the development of the sound localization
- code.
- Arduino can sample at 50kHz, that means 50kB/s, that force us to sample
- for 100ms because of the saturation of the memory.
- Moreover, sampling from 3 microphones simultaneously means to divide the
- frequency (50kHz/3=16kHz), which could produce aliasing for the Nyquist
- theorem (if the input signal has a frequency of more than 8kHz).
-\begin_inset Newline newline
-\end_inset
-
-Furthemore, sampling only 100ms don't let to understand which of the 3 signal
- come first (Interaural Time Difference algorithm).
-\begin_inset Newline newline
-\end_inset
-
-This was the main reason for which we could not complete 
-\shape italic
-MarcoPolo
-\shape default
- game (the therapist could simulate it using 
-\shape italic
 Talk2Teo
-\shape default
-).
+\begin_inset Quotes frd
+\end_inset
+
+ functionalities, the autonomous proposed behavior was not possible within
+ the time frame of the present project given the reasons explained in Chapter
+ 5.
+ Also, among the automatic behaviors proposed, the ones corresponding to
+ the pressure sensors in Teo's body were not implemented due to the lack
+ of a reliable enough processing of the data collected from these sensors
+ and lack of sufficient time to finish its implementation.
+\end_layout
+
+\begin_layout Standard
+By the end, it was proposed to implement a logger to collect data during
+ the interaction situations with Teo2 containing information of the behaviors
+ executed, some sensors measurement and the time to provide support for
+ the evaluation activities.
+ However, due to the time contraints, it was not implemented; even though,
+ the current state of the implementation would allow a simple enough extension
+ to support this functionality.
 \end_layout
 
 \begin_layout Section
@@ -114,28 +126,41 @@ Future directions
 \end_layout
 
 \begin_layout Standard
-Our solution is still far from its potential.
-\begin_inset Newline newline
-\end_inset
+The solution presented in this project is still far from its full potential.
+\end_layout
 
-Arduino could be replaced with a more powerful in order to:
+\begin_layout Standard
+One of the main aspects that could be modified in future works with Teo2
+ would be to complement the computational architecture with more processing
+ power, that is, distribute the tasks of collecting data from sensors and
+ control of actuators to the Arduino's microcontroller and add a mini-PC
+ or Raspberry Pi that could help in handling more complex algorithms to
+ enhance Teo's intelligence.
+ For instance,
 \end_layout
 
 \begin_layout Itemize
-easely compute digital signal processing, in order to deal with 
-\series bold
-voice recognition
-\series default
- and 
-\series bold
-face detection
-\series default
-.
+Easily compute digital signal processing algorithm, in order to deal with
+ voice recognition, face detection and emotion detection.
 \end_layout
 
 \begin_layout Itemize
-have enough resources to have an artificial intelligence, which would allow
- Teo to be a companion in the children life, not 
+Add an external ADC able to handle the sampling of the audio signal at rate
+ of minimun 40kHz for each microphone, that together with the increase of
+ the processing power, be able to implement a robust sound localization
+ algorithm.
+\end_layout
+
+\begin_layout Itemize
+Add a well-designed power stage in the electronics of Teo in order to provide
+ the required power to the LED matrix to achive its full brightness and
+ to guarantee a reliable performance of the system under demanding situations.
+\end_layout
+
+\begin_layout Itemize
+Provide enough resources to have an artificial intelligence, which would
+ allow Teo to be a more natural play companion in the children lives, not
+ 
 \begin_inset Quotes fld
 \end_inset
 
@@ -147,21 +172,28 @@ only
 \end_layout
 
 \begin_layout Itemize
-centralize the network around Teo, leaving the computer application only
- to set controller commands or other features before the session starts.
+Centralize the network and processing in Teo, so the computer is not as
+ essential as in the current state.
 \end_layout
 
-\begin_layout Standard
-The synthesized voice could be replaced with a real one in order to get
- better engagement of the children (even if a synthesized voice allow to
- modify the sentences more easly).
-\begin_inset Newline newline
+\begin_layout Itemize
+For the scenario 
+\begin_inset Quotes fld
 \end_inset
 
-Teo2 model leaves space to many possibilities in terms of usage and advantages
- within the therapy.
- Several new games and interaction can be designed using Teo2, thanks to
- its versatility.
+Talk2Teo
+\begin_inset Quotes frd
+\end_inset
+
+, a tablet application could be implemented in order to substitute the joypad
+ to control Teo, so to provide a possible better and more adaptive user
+ experience for the therapists.
+\end_layout
+
+\begin_layout Itemize
+Evaluate if the synthesized voice could be replaced with a real one in order
+ to get better engagement of the children vs the flexibility provided by
+ Text-to-Speech software.
 \end_layout
 
 \end_body
